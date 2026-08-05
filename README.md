@@ -1,137 +1,57 @@
 # sang-t.github.io
 
-김상민 (Sangmin Kim) 개인 학술 홈페이지.
-순수 HTML/CSS/JS로 만들었고 GitHub Pages로 배포합니다.
+김상민 (Sangmin Kim) 개인 홈페이지.
 
-🔗 https://sang-t.github.io
+중앙대학교 융합보안학과 박사과정, [PURE Lab](https://cau-purelab.github.io/).
+연구 관심사와 논문, 특허, 프로젝트, 경력을 한 페이지에 정리했습니다.
+한국어/영어 전환과 다크모드를 지원합니다.
+
+🔗 **https://sang-t.github.io**
 
 ## 구조
 
-| 파일 | 역할 |
-| --- | --- |
-| `index.html` | 페이지 구조 (인트로 / 연구 / 논문 / 특허 / 프로젝트 / 경력 / 학력 / 수상 / 연락처) |
-| `styles.css` | 스타일. 맨 위 `:root` 블록에서 색·폰트·본문 폭을 한 번에 바꿀 수 있습니다 |
-| `app.js` | 한국어/영어 번역 사전, 언어 토글, 다크모드 토글, 상단 탭 현재 위치 표시 |
-| `papers/` | 온라인 공개본이 없는 논문 원문 PDF |
-| `assets/` | 프로필 사진 |
-| `.nojekyll` | GitHub Pages의 Jekyll 처리를 끕니다 |
+빌드 도구 없이 HTML/CSS/JS 파일 그대로 GitHub Pages로 배포합니다.
 
-섹션 번호(`01`, `02`…)는 HTML에 직접 적혀 있습니다. 섹션을 넣거나 빼면
-`section__num` 값과 상단 탭 목록을 함께 고쳐 주세요.
+```
+index.html    페이지 내용
+styles.css    스타일 (맨 위 :root 에서 색·폰트·본문 폭 조절)
+app.js        한/영 번역 사전, 언어·테마 토글, 상단 탭 표시
+assets/       프로필 사진
+papers/       논문 PDF
+```
 
-본문은 [Pretendard](https://github.com/orioncactus/pretendard),
-장식용 숫자·영문 이름은 Playfair Display를 CDN에서 불러옵니다.
-강조색은 [PURE Lab 홈페이지](https://cau-purelab.github.io/)의 네이비 계열에 맞췄습니다.
+## 수정하기
 
-## ⚠️ 개인정보
-
-`.gitignore`가 `*.pdf`와 `*.docx`를 제외합니다.
-이력서·포트폴리오 PDF에는 **휴대폰 번호, 집 주소, 생년월일**이 들어 있어
-공개 저장소에 올라가면 안 됩니다. 이 규칙을 지우지 마세요.
-
-CV를 사이트에 올리고 싶다면 개인정보를 지운 별도 PDF를 만들어서
-`cv.pdf` 같은 이름으로 두고 `.gitignore`에 예외(`!cv.pdf`)를 추가하세요.
-
-## 내용 수정하기
-
-텍스트는 두 군데를 함께 고쳐야 합니다.
-
-1. `index.html` — 화면에 보이는 기본(한국어) 문구
-2. `app.js`의 `TRANSLATIONS` — 같은 키의 `ko` / `en` 값
+텍스트는 `index.html`(한국어)과 `app.js`의 `TRANSLATIONS`(`ko`/`en`)를
+함께 고칩니다. 두 파일은 `data-i18n` 키로 연결됩니다.
 
 ```html
-<!-- index.html -->
 <p class="intro__role" data-i18n="intro.role">박사과정 (Ph.D. Student)</p>
 ```
 
 ```js
-// app.js
 ko: { "intro.role": "박사과정 (Ph.D. Student)" },
 en: { "intro.role": "Ph.D. Student" },
 ```
 
-속성이 두 종류입니다.
+항목을 추가할 때는 `<li class="entry">` 한 덩어리를 복사해서 쓰면 됩니다.
 
-- `data-i18n` — 텍스트만 바꿉니다. 대부분 여기에 해당합니다.
-- `data-i18n-html` — `<span class="me">`처럼 마크업이 섞인 문구에 씁니다.
-  저자 목록에서 본인 이름을 굵게 표시할 때 사용합니다.
-
-영문 저자 목록(`Lee, B., Kim, S., …`)처럼 두 언어에서 같은 문구는
-`data-i18n` 없이 HTML에 그대로 두었습니다.
-
-### 논문 추가하기
-
-`index.html`의 `<li class="entry">` 한 덩어리를 복사해 맨 위에 붙이고,
-연도와 내용을 채웁니다. 배지는 선택 사항입니다.
-
-```html
-<li class="entry">
-  <div class="entry__year">2026.03</div>
-  <div class="entry__body">
-    <h3 class="entry__title">논문 제목</h3>
-    <p class="entry__authors"><span class="me">Kim, S.</span>, Rho, S.</p>
-    <p class="entry__meta">
-      <span class="entry__venue">학회 이름</span>, 2026
-      <span class="badge badge--first" data-i18n="badge.first">제1저자</span>
-    </p>
-  </div>
-</li>
-```
-
-한국어 제목이라 영문 번역이 필요하면 `data-i18n` 키를 새로 만들어
-`app.js`의 `ko` / `en` 양쪽에 추가하세요.
-
-## 로컬에서 보기
+로컬에서 확인:
 
 ```bash
-python3 -m http.server 8000
-# http://localhost:8000
+python3 -m http.server 8000   # http://localhost:8000
 ```
 
 ## 배포
 
-`main` 브랜치에 push하면 GitHub Pages가 자동으로 반영합니다 (보통 1분 이내).
+`main`에 push하면 1분 안에 반영됩니다.
 
 ```bash
-git add -A && git commit -m "내용 수정" && git push
+git add -A && git commit -m "수정" && git push
 ```
 
-## 논문 링크
+## 주의
 
-9편 모두 제목을 누르면 원문이 열립니다.
-
-| 논문 | 링크 |
-| --- | --- |
-| 비가시성 워터마킹 (JPT 2025) | `papers/` 로컬 PDF |
-| Discriminator-Guided Unlearning (TRUST-AI 2025) | CEUR-WS |
-| Machine Unlearning into SDT (FedCSIS 2025) | Annals of CSIS |
-| Online Grooming (CMES 2025) | DOI |
-| 보이스피싱 탐지 (한국전자거래학회지 2024) | DOI + `papers/` PDF |
-| Advancing Autoencoder (CMC 2024) | TechScience |
-| 교통안전시설물 (KICS 2023) | `papers/` 로컬 PDF |
-| RAID (Sustainability 2023) | MDPI |
-| 감성대화 말뭉치 (KSCI 2022) | `papers/` 로컬 PDF + DBpia |
-
-## 특허
-
-등록 2건, 출원 4건이 `index.html`의 특허 섹션에 있습니다.
-
-| 등록/출원 | 번호 | 특허권자 |
-| --- | --- | --- |
-| 등록 2026.06.25 | 10-2984271 (보이스피싱 맥락 인식) | 순천향대학교 산학협력단 |
-| 등록 2026.02.27 | 10-2934580 (온라인 그루밍 탐지) | 중앙대학교 산학협력단 |
-| 출원 2025.09.17 | 10-2025-0133282 (cGAN 선택적 망각) | 중앙대학교 산학협력단 |
-| 출원 2025.08.08 | 10-2025-0109528 (SDT 머신 언러닝) | 중앙대학교 산학협력단 |
-| 출원 2025.04.10 | PCT/KR2025-004854 | 순천향대학교 |
-| 출원 2024.11.14 | 10-2024-0161756 (다변수 시계열 이상 탐지) | 중앙대학교 산학협력단 |
-
-## 남은 항목
-
-- [ ] 다변수 시계열 이상 탐지 특허의 출원번호 — 출원서 PDF에 번호가 찍히기 전
-      서류라 확인하지 못했습니다
-
-- [ ] 보이스피싱 논문 (한국전자거래학회지 2024) 링크 — DBpia/KCI 주소나 PDF를
-      `papers/` 에 넣고 `index.html`의 해당 항목을 다른 논문처럼 바꾸면 됩니다
-- [ ] Google Scholar · ORCID 링크 추가
-- [ ] 프로필 사진, OG 이미지
-- [ ] 개인정보를 지운 CV PDF
+`.gitignore`가 `*.pdf`를 제외합니다 (`papers/` 는 예외).
+이력서·포트폴리오 같은 문서에는 휴대폰 번호와 주소가 들어 있으니
+이 규칙은 그대로 두세요.
