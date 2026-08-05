@@ -44,11 +44,13 @@ python3 -m http.server 8000   # http://localhost:8000
 
 ## 배포
 
-`main`에 push하면 1분 안에 반영됩니다.
-
 ```bash
-git add -A && git commit -m "수정" && git push
+./deploy.sh "수정 내용"
 ```
+
+`styles.css`와 `app.js`의 내용 해시를 `index.html`의 `?v=` 에 다시 써넣은 뒤
+커밋하고 push합니다. 해시가 바뀌면 브라우저가 캐시를 무시하고 새로 받아가므로
+"고쳤는데 화면이 그대로"인 일이 없습니다. 반영까지 1분 정도 걸립니다.
 
 ## 주의
 

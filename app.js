@@ -44,7 +44,7 @@ const TRANSLATIONS = {
     "research.i2Desc":
       "보이스피싱과 온라인 그루밍처럼 실질적인 피해로 이어지는 범죄를 AI로 탐지하고, 잊힐 권리 같은 규제 아래에서 모델이 민감 정보를 실제로 잊었는지 공격 기법으로 검증합니다.",
     "research.i3Desc":
-      "법령처럼 방대한 문서를 근거로 답하게 하는 검색 증강 생성, 큰 모델의 성능을 단말에서 돌아갈 만큼 작은 모델로 옮기는 경량화, 환각을 줄이는 검색 구조 설계를 함께 다룹니다.",
+      "법령처럼 방대한 문서를 근거로 답하게 하는 검색 증강 생성, 큰 모델의 성능을 유지하면서 크기를 줄이는 경량화, 환각을 줄이는 검색 구조 설계를 함께 다룹니다.",
 
     "badge.first": "제1저자",
     "badge.journal": "저널",
@@ -260,7 +260,7 @@ const TRANSLATIONS = {
     "research.i2Desc":
       "I use AI to detect crimes that cause tangible harm, such as voice phishing and online grooming, and verify with attack techniques whether a model has genuinely forgotten sensitive data under rules like the right to be forgotten.",
     "research.i3Desc":
-      "Retrieval-augmented generation that grounds answers in large document sets such as regulations, distillation that shrinks a large model down to something a device can run, and retrieval design that cuts hallucination.",
+      "Retrieval-augmented generation that grounds answers in large document sets such as regulations, distillation that keeps a large model's performance at a much smaller size, and retrieval design that cuts hallucination.",
 
     "badge.first": "First author",
     "badge.journal": "Journal",
