@@ -94,7 +94,7 @@ const TRANSLATIONS = {
     "publications.p5Authors": '<span class="me">김상민</span>, 노승민',
     "publications.p5Venue": "한국전자거래학회지",
     "publications.p5Desc":
-      "Whisper로 통화 음성을 텍스트로 바꾸고, KoELECTRA-base를 교사, small을 학생으로 지식 증류를 적용했습니다. 모바일 온디바이스 적용을 염두에 둔 경량 모델입니다.",
+      "Whisper로 통화 음성을 텍스트로 바꾸고, KoELECTRA-base를 교사, small을 학생으로 지식 증류를 적용했습니다. 정확도 0.96을 유지하면서 모델을 경량화해, 모바일 온디바이스 적용 가능성을 보였습니다.",
 
     "publications.p6Desc":
       "1D 합성곱과 양방향 LSTM을 결합한 ConvBiLSTM-AE로 산업 제어 시스템의 다변량 시계열 이상을 비지도 학습으로 탐지합니다. HAI 23.05 데이터셋으로 검증했습니다.",
@@ -161,7 +161,7 @@ const TRANSLATIONS = {
       "다변수 산업 사물 단말 관련 시계열 데이터에서 딥 러닝 모델을 기초로 한 이상 탐지 방법 및 그 장치",
     "patents.t6Authors":
       '<span class="me">김상민</span>, 이병천, 문지훈, 노승민, 무아잠 마쿠수드',
-    "patents.t6Meta": "출원 2024.11.14 · 중앙대학교 산학협력단",
+    "patents.t6Meta": "출원 10-2024-0161756 · 중앙대학교 산학협력단",
 
     "projects.title": "프로젝트",
     "projects.j1Title":
@@ -208,7 +208,9 @@ const TRANSLATIONS = {
     "education.d1Desc":
       '<a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">Privacy, Unlearning, and Robust Engineering Lab</a>',
     "education.d2Title": "중앙대학교 융합보안학과 석사",
-    "education.d2Desc": "산업보안기술 전공 · 학점 4.35 / 4.5",
+    "education.d2Desc": "산업보안기술 전공 · 학점 4.35 / 4.5 · 지도교수 노승민",
+    "education.d2Thesis":
+      '석사학위논문 — <span class="entry__thesis">선택적 지식 증류를 통한 소프트 결정 트리에서의 머신 언러닝 프레임워크</span>',
     "education.d3Title": "순천향대학교 AI·빅데이터학과 학사",
     "education.d3Desc": "융합창업학부 SW스타트업 복수전공 · 학점 4.08 / 4.5",
 
@@ -314,12 +316,12 @@ const TRANSLATIONS = {
       "Extracts text from SNS conversation images via OCR and classifies it into sexually explicit, normal, and hate speech with KcELECTRA, reaching 0.953 accuracy and outperforming the Transformer baselines compared.",
 
     "publications.p5Title":
-      "Detection of Suspicious Voice Phishing Utterances Using Deep Learning-Based NLP and Knowledge Distillation",
+      "Voice Phishing Detection Using Deep Learning-based NLP and Knowledge Distillation Techniques",
     "publications.p5Authors":
       '<span class="me">Kim, S.</span>, &amp; Rho, S.',
     "publications.p5Venue": "The Journal of Society for e-Business Studies",
     "publications.p5Desc":
-      "Transcribes call audio with Whisper, then distills KoELECTRA-base into KoELECTRA-small — a lightweight model designed with on-device mobile deployment in mind.",
+      "Transcribes call audio with Whisper, then distills KoELECTRA-base into KoELECTRA-small. Keeps 0.96 accuracy while shrinking the model, showing it could run on-device on a phone.",
 
     "publications.p6Desc":
       "ConvBiLSTM-AE combines 1D convolution with bidirectional LSTM to detect anomalies in multivariate industrial control-system time series through unsupervised learning, validated on the HAI 23.05 dataset.",
@@ -395,7 +397,7 @@ const TRANSLATIONS = {
       "Method and Apparatus for Anomaly Detection Based on Deep Learning Models in Time Series Data Related to Multivariate Industrial Things Terminals",
     "patents.t6Authors":
       '<span class="me">Kim, S.</span>, Lee, B., Moon, J., Rho, S., &amp; Maqsood, M.',
-    "patents.t6Meta": "Filed 2024.11.14 · Chung-Ang University IACF",
+    "patents.t6Meta": "Application 10-2024-0161756 · Chung-Ang University IACF",
 
     "projects.title": "Projects",
     "projects.j1Title":
@@ -448,7 +450,10 @@ const TRANSLATIONS = {
       '<a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">Privacy, Unlearning, and Robust Engineering Lab</a>',
     "education.d2Title":
       "M.S. in Security Convergence, Chung-Ang University",
-    "education.d2Desc": "Industrial Security Technology · GPA 4.35 / 4.5",
+    "education.d2Desc":
+      "Industrial Security Technology · GPA 4.35 / 4.5 · Advisor: Seungmin Rho",
+    "education.d2Thesis":
+      'M.S. thesis — <span class="entry__thesis">A Machine Unlearning Framework Based on Selective Knowledge Distillation into a Soft Decision Tree</span>',
     "education.d3Title":
       "B.S. in AI & Big Data, Soonchunhyang University",
     "education.d3Desc":

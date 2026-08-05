@@ -549,39 +549,83 @@ ol {
 /* ==================================================================
  * 연도 + 내용 목록 (논문 / 특허 / 경력 / 학력 / 수상)
  * ================================================================== */
+/* 연도 열 | 세로 레일 + 점 | 내용 열 */
 .entries {
+  --rail: 5.25rem; /* 항목 왼쪽 끝에서 레일까지의 거리 */
+  --dot: 0.55rem;
+
+  position: relative;
   display: grid;
-  gap: 0.75rem;
+  gap: 0.35rem;
+}
+
+/* 목록 전체를 관통하는 한 줄 */
+.entries::before {
+  content: "";
+  position: absolute;
+  left: var(--rail);
+  top: 1.65rem;
+  bottom: 1.65rem;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--border-strong) 2rem,
+    var(--border-strong) calc(100% - 2rem),
+    transparent
+  );
 }
 
 .entry {
   position: relative;
   display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  gap: 0 1.1rem;
-  padding: 1.1rem 1.2rem;
-  border: 1px solid transparent;
-  border-radius: var(--radius-lg);
-  transition: border-color 0.18s ease, background-color 0.18s ease,
-    box-shadow 0.18s ease;
+  grid-template-columns: 4.5rem 1.5rem 1fr;
+  gap: 0;
+  padding: 0.85rem 1.1rem 0.85rem 0;
+  border-radius: var(--radius);
+  transition: background-color 0.18s ease;
 }
 
 .entry:hover {
-  background: var(--surface);
-  border-color: var(--border);
-  box-shadow: var(--shadow-md);
+  background: color-mix(in srgb, var(--accent-soft) 55%, transparent);
 }
 
-.section--soft .entry:hover {
-  background: var(--bg);
+/* 레일 위의 점 — 배경색 링으로 선을 끊어 줍니다 */
+.entry::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--rail) - var(--dot) / 2);
+  top: 1.45rem;
+  width: var(--dot);
+  height: var(--dot);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3.5px var(--bg);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.section--soft .entry::before {
+  box-shadow: 0 0 0 3.5px var(--bg-soft);
+}
+
+.entry:hover::before {
+  transform: scale(1.35);
 }
 
 .entry__year {
+  grid-column: 1;
+  text-align: right;
+  padding-inline-end: 1rem;
   font-size: 0.78rem;
   font-variant-numeric: tabular-nums;
   color: var(--text-faint);
   white-space: nowrap;
-  padding-top: 0.35em;
+  padding-top: 0.3em;
+}
+
+.entry__body {
+  grid-column: 3;
 }
 
 .entry__body > * {
@@ -674,6 +718,12 @@ ol {
   font-size: 0.9rem;
   color: var(--text-muted);
   margin-top: 0.45rem;
+}
+
+/* 학위논문 제목 */
+.entry__thesis {
+  color: var(--text);
+  font-weight: 500;
 }
 
 .entry__links {
@@ -804,14 +854,29 @@ ol {
     margin-inline-start: auto;
   }
 
+  /* 좁은 화면에서는 레일을 왼쪽 끝으로 옮기고 연도를 제목 위로 올립니다. */
+  .entries {
+    --rail: 0.25rem;
+  }
+
   .entry {
     grid-template-columns: 1fr;
     gap: 0.2rem;
-    padding: 1rem;
+    padding: 0.85rem 0.5rem 0.85rem 1.4rem;
   }
 
   .entry__year {
-    padding-top: 0;
+    grid-column: 1;
+    text-align: left;
+    padding: 0 0 0.1rem;
+  }
+
+  .entry__body {
+    grid-column: 1;
+  }
+
+  .entry::before {
+    top: 1.15rem;
   }
 }
 

@@ -98,7 +98,7 @@ git add -A && git commit -m "내용 수정" && git push
 
 ## 논문 링크
 
-9편 중 8편은 제목을 누르면 원문이 열립니다.
+9편 모두 제목을 누르면 원문이 열립니다.
 
 | 논문 | 링크 |
 | --- | --- |
@@ -106,7 +106,7 @@ git add -A && git commit -m "내용 수정" && git push
 | Discriminator-Guided Unlearning (TRUST-AI 2025) | CEUR-WS |
 | Machine Unlearning into SDT (FedCSIS 2025) | Annals of CSIS |
 | Online Grooming (CMES 2025) | DOI |
-| 보이스피싱 탐지 (한국전자거래학회지 2024) | **없음** |
+| 보이스피싱 탐지 (한국전자거래학회지 2024) | DOI + `papers/` PDF |
 | Advancing Autoencoder (CMC 2024) | TechScience |
 | 교통안전시설물 (KICS 2023) | `papers/` 로컬 PDF |
 | RAID (Sustainability 2023) | MDPI |
@@ -123,7 +123,7 @@ git add -A && git commit -m "내용 수정" && git push
 | 출원 2025.09.17 | 10-2025-0133282 (cGAN 선택적 망각) | 중앙대학교 산학협력단 |
 | 출원 2025.08.08 | 10-2025-0109528 (SDT 머신 언러닝) | 중앙대학교 산학협력단 |
 | 출원 2025.04.10 | PCT/KR2025-004854 | 순천향대학교 |
-| 출원 2024.11.14 | 번호 미확인 (다변수 시계열 이상 탐지) | 중앙대학교 산학협력단 |
+| 출원 2024.11.14 | 10-2024-0161756 (다변수 시계열 이상 탐지) | 중앙대학교 산학협력단 |
 
 ## 남은 항목
 

@@ -93,7 +93,7 @@
         </p>
 
         <div class="intro__links">
-          <a class="pill pill--primary" href="mailto:kimddol98@cau.ac.kr" data-i18n="intro.linkEmail">이메일 보내기</a>
+          <a class="pill pill--primary" href="mailto:kimddol98@cau.ac.kr?subject=%5B%EB%AC%B8%EC%9D%98%5D%20%EA%B9%80%EC%83%81%EB%AF%BC%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%EB%A5%BC%20%EB%B3%B4%EA%B3%A0%20%EC%97%B0%EB%9D%BD%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4" data-i18n="intro.linkEmail">이메일 보내기</a>
           <a class="pill" href="https://cau-purelab.github.io/" target="_blank" rel="noopener">PURE Lab</a>
           <a class="pill" href="https://www.notion.so/a3c2c9dd43084f2b8cb11d3cfcdf1c5f?source=copy_link" target="_blank" rel="noopener" data-i18n="intro.linkPortfolio">포트폴리오</a>
           <a class="pill" href="https://github.com/Sang-T" target="_blank" rel="noopener">GitHub</a>
@@ -283,24 +283,31 @@
           </li>
 
           <!-- 2024.10 (국내 저널) -->
-          <li class="entry">
-            <div class="entry__year">2024.10</div>
+          <li class="entry entry--linked">
+            <div class="entry__year">2024.11</div>
             <div class="entry__body">
-              <h3 class="entry__title" data-i18n="publications.p5Title">
-                딥러닝 기반 NLP 및 지식증류기법을 활용한 보이스피싱 의심 발언 탐지
+              <h3 class="entry__title">
+                <a href="https://doi.org/10.7838/jsebs.2024.29.4.139" target="_blank" rel="noopener">
+                  <span data-i18n="publications.p5Title">딥러닝 기반 NLP 및 지식증류기법을 활용한 보이스피싱 의심 발언 탐지</span><span class="entry__arrow" aria-hidden="true">↗</span>
+                </a>
               </h3>
               <p class="entry__authors" data-i18n-html="publications.p5Authors">
                 <span class="me">김상민</span>, 노승민
               </p>
               <p class="entry__meta">
-                <span class="entry__venue" data-i18n="publications.p5Venue">한국전자거래학회지</span>, 2024
+                <span class="entry__venue" data-i18n="publications.p5Venue">한국전자거래학회지</span>, 29(4), 139–148, 2024
                 <span class="badge badge--first" data-i18n="badge.first">제1저자</span>
                 <span class="badge" data-i18n="badge.journal">저널</span>
               </p>
               <p class="entry__desc" data-i18n="publications.p5Desc">
                 Whisper로 통화 음성을 텍스트로 바꾸고, KoELECTRA-base를 교사, small을 학생으로
-                지식 증류를 적용했습니다. 모바일 온디바이스 적용을 염두에 둔 경량 모델입니다.
+                지식 증류를 적용했습니다. 정확도 0.96을 유지하면서 모델을 경량화해, 모바일
+                온디바이스 적용 가능성을 보였습니다.
               </p>
+              <div class="entry__links">
+                <a href="https://doi.org/10.7838/jsebs.2024.29.4.139" target="_blank" rel="noopener">DOI</a>
+                <a href="papers/2024-jsebs-voice-phishing-distillation.pdf" target="_blank" rel="noopener">PDF</a>
+              </div>
             </div>
           </li>
 
@@ -536,7 +543,7 @@
                 <span class="me">김상민</span>, 이병천, 문지훈, 노승민, 무아잠 마쿠수드
               </p>
               <p class="entry__meta">
-                <span data-i18n="patents.t6Meta">출원 2024.11.14 · 중앙대학교 산학협력단</span>
+                <span data-i18n="patents.t6Meta">출원 10-2024-0161756 · 중앙대학교 산학협력단</span>
                 <span class="badge" data-i18n="badge.filed">출원</span>
               </p>
             </div>
@@ -709,8 +716,12 @@
             <div class="entry__year">2024.03<br />– 2026.02</div>
             <div class="entry__body">
               <h3 class="entry__title" data-i18n="education.d2Title">중앙대학교 융합보안학과 석사</h3>
-              <p class="entry__desc" data-i18n="education.d2Desc">
-                산업보안기술 전공 · 학점 4.35 / 4.5
+              <p class="entry__meta" data-i18n="education.d2Desc">
+                산업보안기술 전공 · 학점 4.35 / 4.5 · 지도교수 노승민
+              </p>
+              <p class="entry__desc" data-i18n-html="education.d2Thesis">
+                석사학위논문 —
+                <span class="entry__thesis">선택적 지식 증류를 통한 소프트 결정 트리에서의 머신 언러닝 프레임워크</span>
               </p>
             </div>
           </li>
