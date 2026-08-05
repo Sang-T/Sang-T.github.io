@@ -111,13 +111,15 @@
           <span class="section__rule" aria-hidden="true"></span>
         </div>
 
+        <p class="section__note" data-i18n="research.note">주 연구 분야 2개와 함께 다루는 분야 3개입니다.</p>
+
         <div class="interests">
           <article class="interest">
-            <h3 class="interest__title" data-i18n="research.i1Title">머신 언러닝</h3>
+            <h3 class="interest__title">Machine Unlearning<span class="interest__ko" data-i18n="research.i1Ko">머신 언러닝</span></h3>
             <p class="interest__desc" data-i18n="research.i1Desc">
-              전체 재학습 없이 학습된 모델에서 특정 클래스나 데이터의 영향을 선택적으로 제거하는
-              방법을 연구합니다. 소프트 결정 트리로의 지식 증류, 판별자를 활용한 조건부 GAN
-              언러닝, 스트리밍 환경의 온라인 언러닝을 다뤘습니다.
+              학습이 끝난 모델에서 특정 클래스나 데이터의 영향만 골라 지우는 방법을 연구합니다.
+              소프트 결정 트리로의 지식 증류, 판별자를 조정하는 조건부 GAN 언러닝, 스트리밍
+              환경의 온라인 언러닝을 다뤘습니다.
             </p>
             <ul class="tags">
               <li data-i18n="research.i1t1">클래스 단위 언러닝</li>
@@ -127,33 +129,40 @@
           </article>
 
           <article class="interest">
-            <h3 class="interest__title" data-i18n="research.i2Title">프라이버시와 신뢰할 수 있는 AI</h3>
+            <h3 class="interest__title">AI Security<span class="interest__ko" data-i18n="research.i2Ko">AI 보안</span></h3>
             <p class="interest__desc" data-i18n="research.i2Desc">
-              GDPR의 잊힐 권리처럼 강화되는 규제 환경에서, 모델이 민감 정보를 실제로 잊었는지
-              검증하는 문제에 관심이 있습니다. 멤버십 추론 공격과 모델 역전 공격을 이용한
-              언러닝 검증, 그리고 SHAP 기반 해석 가능성을 함께 다룹니다.
+              보이스피싱과 온라인 그루밍처럼 실제 피해가 나는 문제를 AI로 탐지하고, 잊힐 권리
+              같은 규제 아래에서 모델이 민감 정보를 정말 잊었는지 검증합니다. 산업 제어 이상
+              탐지와 네트워크 침입 탐지까지 범위를 넓혀 왔습니다.
             </p>
             <ul class="tags">
               <li data-i18n="research.i2t1">잊힐 권리</li>
               <li data-i18n="research.i2t2">멤버십 추론 공격</li>
-              <li data-i18n="research.i2t3">설명 가능한 AI</li>
-            </ul>
-          </article>
-
-          <article class="interest">
-            <h3 class="interest__title" data-i18n="research.i3Title">보안 문제에 적용하는 AI</h3>
-            <p class="interest__desc" data-i18n="research.i3Desc">
-              보이스피싱과 온라인 그루밍처럼 실제 피해가 발생하는 문제를 자연어 처리와 OCR로
-              탐지하고, 산업 제어 시스템의 시계열 이상 탐지와 네트워크 침입 탐지로 범위를
-              넓혀 왔습니다.
-            </p>
-            <ul class="tags">
-              <li data-i18n="research.i3t1">자연어 처리</li>
-              <li data-i18n="research.i3t2">이상 탐지</li>
-              <li data-i18n="research.i3t3">침입 탐지</li>
+              <li data-i18n="research.i2t3">침입·이상 탐지</li>
             </ul>
           </article>
         </div>
+
+        <ul class="subinterests">
+          <li class="subinterest">
+            <h3 class="subinterest__title">LLM</h3>
+            <p class="subinterest__desc" data-i18n="research.s1Desc">
+              RAG 기반 질의응답과 지식 증류를 이용한 경량화
+            </p>
+          </li>
+          <li class="subinterest">
+            <h3 class="subinterest__title">Machine Learning</h3>
+            <p class="subinterest__desc" data-i18n="research.s2Desc">
+              트리 앙상블과 부스팅, 스트림 환경의 증분 학습
+            </p>
+          </li>
+          <li class="subinterest">
+            <h3 class="subinterest__title">Deep Learning</h3>
+            <p class="subinterest__desc" data-i18n="research.s3Desc">
+              트랜스포머 기반 NLP, 오토인코더, 생성 모델
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -732,6 +741,16 @@
               <h3 class="entry__title" data-i18n="education.d3Title">순천향대학교 AI·빅데이터학과 학사</h3>
               <p class="entry__desc" data-i18n="education.d3Desc">
                 융합창업학부 SW스타트업 복수전공 · 학점 4.08 / 4.5
+              </p>
+            </div>
+          </li>
+
+          <li class="entry">
+            <div class="entry__year">2014.03<br />– 2017.02</div>
+            <div class="entry__body">
+              <h3 class="entry__title" data-i18n="education.d4Title">대전대신고등학교</h3>
+              <p class="entry__desc" data-i18n="education.d4Desc">
+                대전광역시
               </p>
             </div>
           </li>

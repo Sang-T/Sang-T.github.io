@@ -524,10 +524,52 @@ ol {
   margin-bottom: 0.4rem;
 }
 
+/* 영문 분야명 옆의 한글 표기 */
+.interest__ko {
+  margin-inline-start: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0;
+}
+
 .interest__desc {
   color: var(--text-muted);
   font-size: 0.93rem;
   margin: 0;
+}
+
+/* 함께 다루는 분야 — 주 분야보다 한 단계 가볍게 */
+.subinterests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.85rem;
+  margin-top: 0.85rem;
+}
+
+.subinterest {
+  padding: 0.9rem 1.1rem;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  transition: border-color 0.18s ease;
+}
+
+.subinterest:hover {
+  border-color: var(--accent);
+}
+
+.subinterest__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.15rem;
+}
+
+.subinterest__desc {
+  margin: 0;
+  font-size: 0.83rem;
+  line-height: 1.6;
+  color: var(--text-muted);
 }
 
 .tags {
