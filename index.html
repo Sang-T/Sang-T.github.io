@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sangmin — Portfolio</title>
-  <meta name="description" content="Sangmin의 개인 포트폴리오 사이트" />
+  <title>김상민 (Sangmin Kim) — 중앙대학교 융합보안학과 박사과정</title>
+  <meta name="description" content="중앙대학교 융합보안학과 Privacy, Unlearning, and Robust Engineering Lab 박사과정 김상민입니다." />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sangmin — Portfolio" />
-  <meta property="og:description" content="Sangmin의 개인 포트폴리오 사이트" />
+  <meta property="og:title" content="김상민 (Sangmin Kim) — 중앙대학교 융합보안학과 박사과정" />
+  <meta property="og:description" content="중앙대학교 융합보안학과 Privacy, Unlearning, and Robust Engineering Lab 박사과정 김상민입니다." />
   <meta property="og:url" content="https://sang-t.github.io/" />
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -31,12 +31,12 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Main">
-      <a class="nav__brand" href="#top">SM</a>
+      <a class="nav__brand" href="#top">SK</a>
 
       <ul class="nav__links">
         <li><a href="#about" data-i18n="nav.about">소개</a></li>
-        <li><a href="#skills" data-i18n="nav.skills">기술</a></li>
-        <li><a href="#projects" data-i18n="nav.projects">프로젝트</a></li>
+        <li><a href="#research" data-i18n="nav.research">연구</a></li>
+        <li><a href="#publications" data-i18n="nav.publications">논문</a></li>
         <li><a href="#contact" data-i18n="nav.contact">연락처</a></li>
       </ul>
 
@@ -59,13 +59,14 @@
         <p class="hero__eyebrow" data-i18n="hero.eyebrow">안녕하세요 👋</p>
         <h1 class="hero__title">
           <span data-i18n="hero.name">김상민</span>
-          <span class="hero__title-accent" data-i18n="hero.role">백엔드 개발자</span>
+          <span class="hero__title-accent" data-i18n="hero.role">박사과정 · 중앙대학교 융합보안학과</span>
         </h1>
         <p class="hero__tagline" data-i18n="hero.tagline">
-          견고한 시스템을 설계하고, 복잡한 문제를 단순하게 만드는 일을 좋아합니다.
+          Privacy, Unlearning, and Robust Engineering Lab에서
+          프라이버시 보호와 머신 언러닝, 그리고 강건한 AI 시스템을 연구하고 있습니다.
         </p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#projects" data-i18n="hero.ctaPrimary">프로젝트 보기</a>
+          <a class="btn btn--primary" href="#publications" data-i18n="hero.ctaPrimary">논문 보기</a>
           <a class="btn btn--ghost" href="mailto:kimddol98@gmail.com" data-i18n="hero.ctaSecondary">이메일 보내기</a>
         </div>
       </div>
@@ -77,104 +78,102 @@
         <h2 class="section__title" data-i18n="about.title">소개</h2>
         <div class="about">
           <p data-i18n="about.p1">
-            사용자에게 실제로 가치를 주는 제품을 만드는 데 관심이 많습니다.
-            읽기 쉬운 코드와 명확한 문서가 좋은 소프트웨어의 시작이라고 믿습니다.
+            중앙대학교 융합보안학과 Privacy, Unlearning, and Robust Engineering Lab에서
+            박사과정을 밟고 있습니다.
           </p>
           <p data-i18n="about.p2">
-            현재는 웹 백엔드와 인프라 자동화를 중심으로 일하고 있으며,
-            새로운 기술을 배워 팀에 전파하는 것을 즐깁니다.
+            <!-- TODO: 연구 동기, 지향점, 앞으로 하고 싶은 일 등을 채워 주세요. -->
+            학습된 모델에서 특정 정보를 안전하게 지우는 문제와, 그 과정에서
+            모델의 성능과 신뢰성을 어떻게 지킬 수 있을지에 관심이 있습니다.
           </p>
           <dl class="about__facts">
             <div class="fact">
+              <dt data-i18n="about.factAffiliationLabel">소속</dt>
+              <dd data-i18n="about.factAffiliationValue">중앙대학교 융합보안학과</dd>
+            </div>
+            <div class="fact">
+              <dt data-i18n="about.factLabLabel">연구실</dt>
+              <dd data-i18n="about.factLabValue">Privacy, Unlearning, and Robust Engineering Lab</dd>
+            </div>
+            <div class="fact">
+              <dt data-i18n="about.factPositionLabel">과정</dt>
+              <dd data-i18n="about.factPositionValue">박사과정 (Ph.D. Student)</dd>
+            </div>
+            <div class="fact">
               <dt data-i18n="about.factLocationLabel">위치</dt>
               <dd data-i18n="about.factLocationValue">대한민국 서울</dd>
-            </div>
-            <div class="fact">
-              <dt data-i18n="about.factFocusLabel">관심 분야</dt>
-              <dd data-i18n="about.factFocusValue">백엔드 · 분산 시스템 · DX</dd>
-            </div>
-            <div class="fact">
-              <dt data-i18n="about.factStatusLabel">상태</dt>
-              <dd data-i18n="about.factStatusValue">새로운 기회에 열려 있습니다</dd>
             </div>
           </dl>
         </div>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section section--alt">
+    <!-- Research -->
+    <section id="research" class="section section--alt">
       <div class="container">
-        <h2 class="section__title" data-i18n="skills.title">기술</h2>
+        <h2 class="section__title" data-i18n="research.title">연구 관심사</h2>
         <div class="skills">
           <article class="skill-group">
-            <h3 data-i18n="skills.g1Title">언어</h3>
+            <h3 data-i18n="research.g1Title">프라이버시</h3>
             <ul class="tags">
-              <li>Java</li><li>Python</li><li>TypeScript</li><li>SQL</li>
+              <li data-i18n="research.g1t1">데이터 프라이버시</li>
+              <li data-i18n="research.g1t2">차분 프라이버시</li>
+              <li data-i18n="research.g1t3">멤버십 추론 공격</li>
             </ul>
           </article>
           <article class="skill-group">
-            <h3 data-i18n="skills.g2Title">프레임워크</h3>
+            <h3 data-i18n="research.g2Title">머신 언러닝</h3>
             <ul class="tags">
-              <li>Spring Boot</li><li>FastAPI</li><li>React</li><li>Node.js</li>
+              <li data-i18n="research.g2t1">머신 언러닝</li>
+              <li data-i18n="research.g2t2">잊힐 권리</li>
+              <li data-i18n="research.g2t3">언러닝 검증</li>
             </ul>
           </article>
           <article class="skill-group">
-            <h3 data-i18n="skills.g3Title">인프라 · 도구</h3>
+            <h3 data-i18n="research.g3Title">강건성 · 신뢰성</h3>
             <ul class="tags">
-              <li>Docker</li><li>Kubernetes</li><li>AWS</li><li>PostgreSQL</li><li>Git</li>
+              <li data-i18n="research.g3t1">적대적 강건성</li>
+              <li data-i18n="research.g3t2">모델 신뢰성</li>
+              <li data-i18n="research.g3t3">AI 보안</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
+    <!-- Publications -->
+    <section id="publications" class="section">
       <div class="container">
-        <h2 class="section__title" data-i18n="projects.title">프로젝트</h2>
-        <div class="projects">
-          <article class="card">
-            <h3 class="card__title" data-i18n="projects.p1Title">프로젝트 이름 1</h3>
-            <p class="card__desc" data-i18n="projects.p1Desc">
-              프로젝트에 대한 두세 줄 설명을 적으세요. 무엇을 만들었고, 어떤 문제를 풀었으며,
-              어떤 결과를 냈는지 쓰면 좋습니다.
-            </p>
-            <ul class="tags tags--sm">
-              <li>Spring Boot</li><li>PostgreSQL</li><li>AWS</li>
-            </ul>
-            <div class="card__links">
-              <a href="https://github.com/Sang-T" data-i18n="projects.linkCode">코드</a>
-              <a href="#" data-i18n="projects.linkDemo">데모</a>
-            </div>
-          </article>
+        <h2 class="section__title" data-i18n="publications.title">논문</h2>
+        <p class="section__lead" data-i18n="publications.lead">
+          <!-- TODO: 실제 논문으로 교체해 주세요. -->
+          아래는 형식 예시입니다. 발표된 논문으로 교체해 주세요.
+        </p>
 
-          <article class="card">
-            <h3 class="card__title" data-i18n="projects.p2Title">프로젝트 이름 2</h3>
-            <p class="card__desc" data-i18n="projects.p2Desc">
-              사용한 기술 스택과 맡은 역할을 함께 적으면 읽는 사람이 이해하기 쉽습니다.
+        <ol class="pubs">
+          <li class="pub">
+            <h3 class="pub__title" data-i18n="publications.p1Title">논문 제목을 입력하세요</h3>
+            <p class="pub__authors">
+              <strong>Sangmin Kim</strong>, Co-author, Co-author
             </p>
-            <ul class="tags tags--sm">
-              <li>React</li><li>TypeScript</li><li>Vite</li>
-            </ul>
-            <div class="card__links">
-              <a href="https://github.com/Sang-T" data-i18n="projects.linkCode">코드</a>
+            <p class="pub__venue" data-i18n="publications.p1Venue">학회 또는 저널 이름, 2026</p>
+            <div class="pub__links">
+              <a href="#" data-i18n="publications.linkPaper">논문</a>
+              <a href="#" data-i18n="publications.linkCode">코드</a>
             </div>
-          </article>
+          </li>
 
-          <article class="card">
-            <h3 class="card__title" data-i18n="projects.p3Title">프로젝트 이름 3</h3>
-            <p class="card__desc" data-i18n="projects.p3Desc">
-              숫자로 표현할 수 있는 성과가 있다면 꼭 넣으세요. 예: 응답 시간 40% 개선.
+          <li class="pub">
+            <h3 class="pub__title" data-i18n="publications.p2Title">논문 제목을 입력하세요</h3>
+            <p class="pub__authors">
+              Co-author, <strong>Sangmin Kim</strong>, Co-author
             </p>
-            <ul class="tags tags--sm">
-              <li>Python</li><li>Docker</li>
-            </ul>
-            <div class="card__links">
-              <a href="https://github.com/Sang-T" data-i18n="projects.linkCode">코드</a>
+            <p class="pub__venue" data-i18n="publications.p2Venue">학회 또는 저널 이름, 2025</p>
+            <div class="pub__links">
+              <a href="#" data-i18n="publications.linkPaper">논문</a>
             </div>
-          </article>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -183,12 +182,12 @@
       <div class="container contact">
         <h2 class="section__title" data-i18n="contact.title">연락처</h2>
         <p class="contact__lead" data-i18n="contact.lead">
-          협업 제안이나 궁금한 점이 있다면 언제든 편하게 연락 주세요.
+          공동 연구나 궁금한 점이 있다면 언제든 편하게 연락 주세요.
         </p>
         <ul class="contact__links">
           <li><a href="mailto:kimddol98@gmail.com">kimddol98@gmail.com</a></li>
           <li><a href="https://github.com/Sang-T" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
         </ul>
       </div>
     </section>
@@ -196,7 +195,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Sangmin. <span data-i18n="footer.built">GitHub Pages로 만들었습니다.</span></p>
+      <p>&copy; <span id="year"></span> Sangmin Kim. <span data-i18n="footer.built">GitHub Pages로 만들었습니다.</span></p>
     </div>
   </footer>
 
