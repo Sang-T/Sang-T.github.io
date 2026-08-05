@@ -40,11 +40,11 @@ const TRANSLATIONS = {
 
     "research.title": "연구 관심사",
     "research.i1Desc":
-      "학습이 끝난 모델에서 특정 클래스나 데이터의 영향만 골라 지우는 방법을 연구합니다. 소프트 결정 트리로의 지식 증류, 조건부 GAN 언러닝, 온라인 언러닝을 다뤘습니다.",
+      "학습이 끝난 모델에서 특정 클래스나 데이터의 영향만 골라 지우는 방법을 연구합니다. 트리 모델과 GAN에서의 언러닝을 다뤘고, 최근에는 LLM을 활용한 효율적인 언러닝 기법을 연구하고 있습니다.",
     "research.i2Desc":
-      "보이스피싱과 온라인 그루밍처럼 실제 피해가 나는 문제를 AI로 탐지하고, 잊힐 권리 같은 규제 아래에서 모델이 민감 정보를 정말 잊었는지 공격 기법으로 검증하는 문제를 함께 다룹니다.",
+      "보이스피싱과 온라인 그루밍처럼 실질적인 피해로 이어지는 범죄를 AI로 탐지하고, 잊힐 권리 같은 규제 아래에서 모델이 민감 정보를 실제로 잊었는지 공격 기법으로 검증합니다.",
     "research.i3Desc":
-      "법령처럼 방대한 문서를 근거로 답하게 만드는 검색 증강 생성과, 큰 모델의 성능을 작은 모델로 옮겨 단말에서 돌리는 경량화를 다룹니다. 환각을 줄이는 검색 설계에 관심이 있습니다.",
+      "법령처럼 방대한 문서를 근거로 답하게 하는 검색 증강 생성, 큰 모델의 성능을 단말에서 돌아갈 만큼 작은 모델로 옮기는 경량화, 환각을 줄이는 검색 구조 설계를 함께 다룹니다.",
 
     "badge.first": "제1저자",
     "badge.journal": "저널",
@@ -256,11 +256,11 @@ const TRANSLATIONS = {
 
     "research.title": "Research Interests",
     "research.i1Desc":
-      "I study how to erase the influence of one class or dataset from a model that has already finished training — knowledge distillation into soft decision trees, discriminator-guided unlearning for conditional GANs, and online unlearning on streams.",
+      "I study how to erase the influence of a single class or dataset from a model that has already finished training. My work has covered unlearning in tree models and GANs, and lately efficient unlearning for LLMs.",
     "research.i2Desc":
-      "I use AI to detect problems that cause real harm, such as voice phishing and online grooming, and I work on the other side of it too: proving with attacks whether a model has truly forgotten the data it was asked to forget.",
+      "I use AI to detect crimes that cause tangible harm, such as voice phishing and online grooming, and verify with attack techniques whether a model has genuinely forgotten sensitive data under rules like the right to be forgotten.",
     "research.i3Desc":
-      "Retrieval-augmented generation that grounds answers in large document sets such as financial regulations, and distillation that moves a big model's behaviour into one small enough to run on a device. Cutting hallucination is the goal.",
+      "Retrieval-augmented generation that grounds answers in large document sets such as regulations, distillation that shrinks a large model down to something a device can run, and retrieval design that cuts hallucination.",
 
     "badge.first": "First author",
     "badge.journal": "Journal",
