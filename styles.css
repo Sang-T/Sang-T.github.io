@@ -406,6 +406,27 @@ ol {
   font-weight: 600;
 }
 
+/* 아직 채우지 못한 자리표시자 — 배포 전에 실제 값으로 바꾸고 이 클래스를 지우세요. */
+.entry__authors .todo {
+  color: #b4541f;
+  background: #fdf0e6;
+  border-radius: 3px;
+  padding: 0 0.3em;
+  font-size: 0.9em;
+}
+
+:root[data-theme="dark"] .entry__authors .todo {
+  color: #e8a06a;
+  background: #2c2116;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .entry__authors .todo {
+    color: #e8a06a;
+    background: #2c2116;
+  }
+}
+
 .entry__meta {
   font-size: 0.875rem;
   color: var(--text-muted);

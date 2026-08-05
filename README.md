@@ -89,12 +89,19 @@ python3 -m http.server 8000
 git add -A && git commit -m "내용 수정" && git push
 ```
 
-## 확인이 필요한 항목
+## 배포 전에 채워야 할 항목
 
-- [ ] 영문 학과명 — 현재 "Dept. of Convergence Security, Chung-Ang University"
-- [ ] 박사과정 시작 시점 — 현재 2026.03로 표기
-- [ ] 대표 이메일 — 현재 `kimddol98@naver.com` (GitHub 계정은 gmail)
-- [ ] 저자 미상 논문 3건의 공동 저자 이름
-      (Journal of Platform Technology 2025 / 한국통신학회 2023 / 한국컴퓨터정보학회 2022)
-- [ ] Google Scholar · ORCID · LinkedIn 링크 추가 여부
-- [ ] 국내 특허 출원번호 (국제 출원번호만 기재되어 있음)
+논문 2건의 저자가 아직 자리표시자입니다. 화면에 **주황색으로 표시**되니
+바로 찾을 수 있습니다. `index.html`과 `app.js`에서 `todo` 클래스를 지우고
+실제 저자로 바꾸세요.
+
+- [ ] Journal of Platform Technology 2025.12 (비가시성 워터마킹) — 공동 저자
+- [ ] 한국통신학회 인공지능 학술대회 2023.09 (교통안전시설물) — 공동 저자
+
+DBpia·KCI가 로그인·JS 렌더링이라 자동으로 확인하지 못했습니다.
+
+선택 사항:
+
+- [ ] Google Scholar · ORCID 링크 추가
+- [ ] 프로필 사진, OG 이미지
+- [ ] 개인정보를 지운 CV PDF

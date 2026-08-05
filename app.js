@@ -31,6 +31,7 @@ const TRANSLATIONS = {
     "intro.bio":
       "시계열과 텍스트 등 다양한 도메인의 데이터를 예측하고 분류하는 연구를 해 왔습니다. 보이스피싱 의심 발언 탐지, 온라인 그루밍 탐지처럼 AI로 사회 문제를 풀어 공공 영역에 기여하는 연구를 수행했고, 최근에는 머신 언러닝을 활용해 개인정보 보호와 신뢰성을 동시에 만족하는 AI 모델을 만드는 연구에 집중하고 있습니다.",
     "intro.linkEmail": "이메일",
+    "intro.linkPortfolio": "포트폴리오",
     "intro.linkPubs": "논문",
 
     "research.title": "연구 관심사",
@@ -57,6 +58,8 @@ const TRANSLATIONS = {
     "badge.journal": "저널",
     "badge.conference": "학회",
     "badge.workshop": "워크숍",
+    "badge.granted": "등록",
+    "badge.filed": "출원",
     "link.paper": "논문",
 
     "publications.title": "논문",
@@ -65,7 +68,7 @@ const TRANSLATIONS = {
     "publications.p1Title":
       "비가시성 워터마킹과 선택적 클래스 언러닝을 통합한 이미지 생성 프레임워크",
     "publications.p1Authors":
-      '공동 저자, <span class="me">김상민</span>, 공동 저자',
+      '<span class="todo">저자 확인 필요</span> · <span class="me">김상민</span> 제3저자',
 
     "publications.p2Venue": "ECAI 2025 Workshop on Trustworthy AI (TRUST-AI)",
     "publications.p2Desc":
@@ -90,7 +93,8 @@ const TRANSLATIONS = {
 
     "publications.p7Title":
       "교통안전시설물 및 보행자 유무에 따른 차량 속도와의 관계 연구",
-    "publications.p7Authors": '<span class="me">김상민</span> 외',
+    "publications.p7Authors":
+      '<span class="todo">저자 확인 필요</span> · <span class="me">김상민</span> 제3저자',
     "publications.p7Venue": "한국통신학회 인공지능 학술대회 논문집",
     "publications.p7Desc":
       "YOLOv7과 DeepSORT로 어린이 보호구역 CCTV 영상을 분석해, 신호등·과속방지턱과 보행자 유무가 차량 속도에 미치는 영향을 정량적으로 비교했습니다.",
@@ -99,7 +103,7 @@ const TRANSLATIONS = {
       "요일별로 분리한 7개의 MLP로 건물 일일 최대 전력 수요를 예측하고, Kernel SHAP으로 각 입력 변수의 기여도를 설명합니다.",
 
     "publications.p9Title": "감성대화 말뭉치로 보는 청소년의 문제 도출",
-    "publications.p9Authors": '<span class="me">김상민</span> 외',
+    "publications.p9Authors": '<span class="me">김상민</span>, 이병천, 우지영',
     "publications.p9Venue": "한국컴퓨터정보학회 학술발표논문집",
     "publications.p9Desc":
       "AI-Hub 감성대화 말뭉치 40,879건을 분석해 청소년이 겪는 주요 문제와 감정 분포의 관계를 밝혔습니다.",
@@ -108,15 +112,17 @@ const TRANSLATIONS = {
     "patents.t1Title":
       "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
     "patents.t1Authors":
-      '<span class="me">김상민</span>, 이병천, 정운영, 노병준',
-    "patents.t1Meta": "PCT 국제 출원 (PCT/KR2025-004854) · 순천향대학교",
+      '노병준, <span class="me">김상민</span>, 이병천, 정운영',
+    "patents.t1Meta": "등록특허 제10-2984271호 · 순천향대학교 산학협력단",
+    "patents.t1Sub":
+      "출원 2024.04.11 (10-2024-0048439) · 공개 2025.10.20 (10-2025-0150195) · 등록 2026.06.25",
+    "patents.t1Desc":
+      "통화 음성을 텍스트로 변환하는 경로와 속도·음조·음량 등 음성 특징을 추출하는 경로를 병렬로 두고, 두 정보를 함께 사용해 위험도를 산출합니다. 서버 통신 없이 단말에서 실시간으로 보이스피싱을 탐지합니다. 청구항 9항.",
     "patents.t2Title":
       "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
     "patents.t2Authors":
-      '<span class="me">김상민</span>, 이병천, 정운영, 노병준',
-    "patents.t2Meta": "국내 특허 출원",
-    "patents.t2Desc":
-      "통화 음성을 Whisper로 텍스트화하는 경로와 MFCC·Mel Spectrogram으로 음향 특징을 뽑는 경로를 병렬로 두고, KoELECTRA와 DNN으로 위험도를 산출해 서버 통신 없이 단말에서 보이스피싱을 탐지합니다.",
+      '노병준, <span class="me">김상민</span>, 이병천, 정운영',
+    "patents.t2Meta": "PCT 국제 출원 (PCT/KR2025-004854) · 순천향대학교",
 
     "experience.title": "경력",
     "experience.e1Title": "한국전자통신연구원 (ETRI) · 연구연수생",
@@ -163,6 +169,8 @@ const TRANSLATIONS = {
     "contact.title": "연락처",
     "contact.lead": "공동 연구나 궁금한 점이 있다면 편하게 연락 주세요.",
     "contact.emailLabel": "이메일",
+    "contact.portfolioLabel": "포트폴리오",
+    "contact.portfolioValue": "Notion 포트폴리오",
     "contact.locationLabel": "위치",
     "contact.locationValue": "서울특별시 동작구",
   },
@@ -186,10 +194,11 @@ const TRANSLATIONS = {
     "intro.nameSub": "김상민",
     "intro.role": "Ph.D. Student",
     "intro.affil":
-      "Dept. of Convergence Security, Chung-Ang University · Privacy, Unlearning, and Robust Engineering Lab",
+      "Dept. of Security Convergence, Chung-Ang University · Privacy, Unlearning, and Robust Engineering Lab",
     "intro.bio":
       "My work has centered on forecasting and classification across domains such as time series and text. I have applied AI to problems with real social cost — detecting voice-phishing utterances and online grooming — and I now focus on machine unlearning: building models that satisfy privacy requirements and remain trustworthy at the same time.",
     "intro.linkEmail": "Email",
+    "intro.linkPortfolio": "Portfolio",
     "intro.linkPubs": "Publications",
 
     "research.title": "Research Interests",
@@ -216,6 +225,8 @@ const TRANSLATIONS = {
     "badge.journal": "Journal",
     "badge.conference": "Conference",
     "badge.workshop": "Workshop",
+    "badge.granted": "Granted",
+    "badge.filed": "Filed",
     "link.paper": "Paper",
 
     "publications.title": "Publications",
@@ -224,7 +235,7 @@ const TRANSLATIONS = {
     "publications.p1Title":
       "An Image Generation Framework Integrating Invisible Watermarking and Selective Class Unlearning",
     "publications.p1Authors":
-      'Co-author, <span class="me">Kim, S.</span>, Co-author',
+      '<span class="todo">Authors to be confirmed</span> · <span class="me">Kim, S.</span> third author',
 
     "publications.p2Venue": "ECAI 2025 Workshop on Trustworthy AI (TRUST-AI)",
     "publications.p2Desc":
@@ -250,7 +261,8 @@ const TRANSLATIONS = {
 
     "publications.p7Title":
       "A Study on the Relationship Between Vehicle Speed, Traffic Safety Facilities, and Pedestrian Presence",
-    "publications.p7Authors": '<span class="me">Kim, S.</span>, et al.',
+    "publications.p7Authors":
+      '<span class="todo">Authors to be confirmed</span> · <span class="me">Kim, S.</span> third author',
     "publications.p7Venue":
       "Proceedings of the KICS Conference on Artificial Intelligence",
     "publications.p7Desc":
@@ -261,7 +273,8 @@ const TRANSLATIONS = {
 
     "publications.p9Title":
       "Deriving Adolescent Problems from an Emotional Dialogue Corpus",
-    "publications.p9Authors": '<span class="me">Kim, S.</span>, et al.',
+    "publications.p9Authors":
+      '<span class="me">Kim, S.</span>, Lee, B., &amp; Woo, J.',
     "publications.p9Venue":
       "Proceedings of the Korean Society of Computer Information Conference",
     "publications.p9Desc":
@@ -271,16 +284,19 @@ const TRANSLATIONS = {
     "patents.t1Title":
       "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
     "patents.t1Authors":
-      '<span class="me">Kim, S.</span>, Lee, B., Jeong, W., &amp; Noh, B.',
+      'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
     "patents.t1Meta":
-      "PCT international application (PCT/KR2025-004854) · Soonchunhyang University",
+      "Korean Patent No. 10-2984271 · Soonchunhyang University IACF",
+    "patents.t1Sub":
+      "Filed 2024.04.11 (10-2024-0048439) · Published 2025.10.20 (10-2025-0150195) · Granted 2026.06.25",
+    "patents.t1Desc":
+      "Runs two parallel paths over call audio — one transcribing speech to text, the other extracting acoustic features such as rate, pitch, and volume — and combines both to score risk. Detects voice phishing in real time on the device, with no server round trip. 9 claims.",
     "patents.t2Title":
       "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
     "patents.t2Authors":
-      '<span class="me">Kim, S.</span>, Lee, B., Jeong, W., &amp; Noh, B.',
-    "patents.t2Meta": "Korean patent application",
-    "patents.t2Desc":
-      "Runs two parallel paths over call audio — Whisper for transcription, MFCC and Mel spectrogram for acoustic features — and scores phishing risk with KoELECTRA and a DNN, entirely on-device with no server round trip.",
+      'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
+    "patents.t2Meta":
+      "PCT international application (PCT/KR2025-004854) · Soonchunhyang University",
 
     "experience.title": "Experience",
     "experience.e1Title":
@@ -298,10 +314,10 @@ const TRANSLATIONS = {
     "education.title": "Education",
     "education.d1Year": "2026.03<br />– present",
     "education.d1Title":
-      "Ph.D. in Convergence Security, Chung-Ang University",
+      "Ph.D. in Security Convergence, Chung-Ang University",
     "education.d1Desc": "Privacy, Unlearning, and Robust Engineering Lab",
     "education.d2Title":
-      "M.S. in Convergence Security, Chung-Ang University",
+      "M.S. in Security Convergence, Chung-Ang University",
     "education.d2Desc": "Industrial Security Technology · GPA 4.35 / 4.5",
     "education.d3Title":
       "B.S. in AI & Big Data, Soonchunhyang University",
@@ -346,6 +362,8 @@ const TRANSLATIONS = {
     "contact.lead":
       "Feel free to reach out about collaborations or anything you're curious about.",
     "contact.emailLabel": "Email",
+    "contact.portfolioLabel": "Portfolio",
+    "contact.portfolioValue": "Notion portfolio",
     "contact.locationLabel": "Location",
     "contact.locationValue": "Dongjak-gu, Seoul, South Korea",
   },
