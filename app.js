@@ -57,7 +57,7 @@ const TRANSLATIONS = {
 
     "publications.title": "논문",
     "publications.note":
-      "최신순 · 굵은 이름이 본인입니다. 제목을 누르면 원문으로 이동합니다.",
+      "최신순 · 굵은 이름이 본인입니다.",
 
     "publications.p1Title":
       "비가시성 워터마킹과 선택적 클래스 언러닝을 통합한 이미지 생성 프레임워크",
@@ -273,7 +273,7 @@ const TRANSLATIONS = {
 
     "publications.title": "Publications",
     "publications.note":
-      "Reverse chronological · my name in bold. Titles link to the full text.",
+      "Reverse chronological · my name in bold.",
 
     "publications.p1Title":
       "An Image Generation Framework Integrating Invisible Watermarking and Selective Class Unlearning",

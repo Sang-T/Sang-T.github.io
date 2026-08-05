@@ -5,8 +5,5 @@
 *.pdf
 *.docx
 
-# 단, papers/ 안의 논문 원문은 이미 공개된 자료이므로 사이트와 함께 배포합니다.
-!papers/*.pdf
-
 # 원본 증명사진 (assets/profile.jpg 로 복사해서 사용합니다)
 증명사진.jpeg
