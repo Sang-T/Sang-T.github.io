@@ -39,23 +39,12 @@ const TRANSLATIONS = {
     "intro.linkPortfolio": "포트폴리오",
 
     "research.title": "연구 관심사",
-    "research.i1Ko": "머신 언러닝",
     "research.i1Desc":
       "학습이 끝난 모델에서 특정 클래스나 데이터의 영향만 골라 지우는 방법을 연구합니다. 소프트 결정 트리로의 지식 증류, 조건부 GAN 언러닝, 온라인 언러닝을 다뤘습니다.",
-    "research.i1t1": "클래스 단위 언러닝",
-    "research.i1t2": "생성 모델 언러닝",
-    "research.i1t3": "온라인 언러닝",
-    "research.i2Ko": "AI 보안",
     "research.i2Desc":
       "보이스피싱과 온라인 그루밍처럼 실제 피해가 나는 문제를 AI로 탐지하고, 잊힐 권리 같은 규제 아래에서 모델이 민감 정보를 정말 잊었는지 공격 기법으로 검증하는 문제를 함께 다룹니다.",
-    "research.i2t1": "프라이버시 보호",
-    "research.i2t2": "멤버십 추론 공격",
-    "research.i2t3": "침입·이상 탐지",
-    "research.i3Ko": "대규모 언어 모델",
     "research.i3Desc":
       "법령처럼 방대한 문서를 근거로 답하게 만드는 검색 증강 생성과, 큰 모델의 성능을 작은 모델로 옮겨 단말에서 돌리는 경량화를 다룹니다. 환각을 줄이는 검색 설계에 관심이 있습니다.",
-    "research.i3t1": "지식 증류",
-    "research.i3t2": "온디바이스 추론",
 
     "badge.first": "제1저자",
     "badge.journal": "저널",
@@ -266,23 +255,12 @@ const TRANSLATIONS = {
     "intro.linkPortfolio": "Portfolio",
 
     "research.title": "Research Interests",
-    "research.i1Ko": "머신 언러닝",
     "research.i1Desc":
       "I study how to erase the influence of one class or dataset from a model that has already finished training — knowledge distillation into soft decision trees, discriminator-guided unlearning for conditional GANs, and online unlearning on streams.",
-    "research.i1t1": "Class-level unlearning",
-    "research.i1t2": "Generative model unlearning",
-    "research.i1t3": "Online unlearning",
-    "research.i2Ko": "AI 보안",
     "research.i2Desc":
       "I use AI to detect problems that cause real harm, such as voice phishing and online grooming, and I work on the other side of it too: proving with attacks whether a model has truly forgotten the data it was asked to forget.",
-    "research.i2t1": "Privacy protection",
-    "research.i2t2": "Membership inference",
-    "research.i2t3": "Intrusion & anomaly detection",
-    "research.i3Ko": "대규모 언어 모델",
     "research.i3Desc":
       "Retrieval-augmented generation that grounds answers in large document sets such as financial regulations, and distillation that moves a big model's behaviour into one small enough to run on a device. Cutting hallucination is the goal.",
-    "research.i3t1": "Knowledge distillation",
-    "research.i3t2": "On-device inference",
 
     "badge.first": "First author",
     "badge.journal": "Journal",

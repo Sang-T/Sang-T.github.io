@@ -524,21 +524,6 @@ ol {
   margin-bottom: 0.4rem;
 }
 
-/* 영문 분야명 옆의 한글 표기 */
-.interest__ko {
-  margin-inline-start: 0.5rem;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--text-faint);
-  letter-spacing: 0;
-}
-
-.interest__desc {
-  color: var(--text-muted);
-  font-size: 0.93rem;
-  margin: 0;
-}
-
 .tags {
   display: flex;
   flex-wrap: wrap;
