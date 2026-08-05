@@ -19,20 +19,22 @@ const TRANSLATIONS = {
     "nav.brand": "김상민",
     "nav.research": "연구",
     "nav.publications": "논문",
+    "nav.patents": "특허",
     "nav.experience": "경력",
+    "nav.education": "학력",
     "nav.awards": "수상",
     "nav.contact": "연락처",
 
+    "intro.eyebrow": "공동 연구 제안을 환영합니다",
     "intro.name": "김상민",
     "intro.nameSub": "Sangmin Kim",
     "intro.role": "박사과정 (Ph.D. Student)",
     "intro.affil":
-      "중앙대학교 융합보안학과 · Privacy, Unlearning, and Robust Engineering Lab",
+      '중앙대학교 융합보안학과 · <a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">PURE Lab</a>',
     "intro.bio":
       "시계열과 텍스트 등 다양한 도메인의 데이터를 예측하고 분류하는 연구를 해 왔습니다. 보이스피싱 의심 발언 탐지, 온라인 그루밍 탐지처럼 AI로 사회 문제를 풀어 공공 영역에 기여하는 연구를 수행했고, 최근에는 머신 언러닝을 활용해 개인정보 보호와 신뢰성을 동시에 만족하는 AI 모델을 만드는 연구에 집중하고 있습니다.",
-    "intro.linkEmail": "이메일",
+    "intro.linkEmail": "이메일 보내기",
     "intro.linkPortfolio": "포트폴리오",
-    "intro.linkPubs": "논문",
 
     "research.title": "연구 관심사",
     "research.i1Title": "머신 언러닝",
@@ -60,15 +62,18 @@ const TRANSLATIONS = {
     "badge.workshop": "워크숍",
     "badge.granted": "등록",
     "badge.filed": "출원",
-    "link.paper": "논문",
+    "link.kipris": "KIPRIS에서 보기",
 
     "publications.title": "논문",
-    "publications.note": "최신순 · 굵은 이름이 본인입니다.",
+    "publications.note":
+      "최신순 · 굵은 이름이 본인입니다. 제목을 누르면 원문으로 이동합니다.",
 
     "publications.p1Title":
       "비가시성 워터마킹과 선택적 클래스 언러닝을 통합한 이미지 생성 프레임워크",
     "publications.p1Authors":
-      '<span class="todo">저자 확인 필요</span> · <span class="me">김상민</span> 제3저자',
+      '박성우, 이병천, <span class="me">김상민</span>, 채승엽, 이미영, 노승민',
+    "publications.p1Desc":
+      "생성 모델에서 특정 클래스를 지우는 언러닝과, 생성물의 출처를 확인하는 비가시성 워터마킹을 하나의 프레임워크로 묶었습니다. 두 기술을 따로 다뤄 온 기존 연구와 다른 접근입니다.",
 
     "publications.p2Venue": "ECAI 2025 Workshop on Trustworthy AI (TRUST-AI)",
     "publications.p2Desc":
@@ -94,8 +99,8 @@ const TRANSLATIONS = {
     "publications.p7Title":
       "교통안전시설물 및 보행자 유무에 따른 차량 속도와의 관계 연구",
     "publications.p7Authors":
-      '<span class="todo">저자 확인 필요</span> · <span class="me">김상민</span> 제3저자',
-    "publications.p7Venue": "한국통신학회 인공지능 학술대회 논문집",
+      '김성훈, 이병천, <span class="me">김상민</span>, 노병준',
+    "publications.p7Venue": "제4회 한국인공지능학술대회 (한국통신학회)",
     "publications.p7Desc":
       "YOLOv7과 DeepSORT로 어린이 보호구역 CCTV 영상을 분석해, 신호등·과속방지턱과 보행자 유무가 차량 속도에 미치는 영향을 정량적으로 비교했습니다.",
 
@@ -104,7 +109,7 @@ const TRANSLATIONS = {
 
     "publications.p9Title": "감성대화 말뭉치로 보는 청소년의 문제 도출",
     "publications.p9Authors": '<span class="me">김상민</span>, 이병천, 우지영',
-    "publications.p9Venue": "한국컴퓨터정보학회 학술발표논문집",
+    "publications.p9Venue": "한국컴퓨터정보학회 동계학술대회 논문집",
     "publications.p9Desc":
       "AI-Hub 감성대화 말뭉치 40,879건을 분석해 청소년이 겪는 주요 문제와 감정 분포의 관계를 밝혔습니다.",
 
@@ -138,7 +143,8 @@ const TRANSLATIONS = {
     "education.title": "학력",
     "education.d1Year": "2026.03<br />– 현재",
     "education.d1Title": "중앙대학교 융합보안학과 박사과정",
-    "education.d1Desc": "Privacy, Unlearning, and Robust Engineering Lab",
+    "education.d1Desc":
+      '<a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">Privacy, Unlearning, and Robust Engineering Lab</a>',
     "education.d2Title": "중앙대학교 융합보안학과 석사",
     "education.d2Desc": "산업보안기술 전공 · 학점 4.35 / 4.5",
     "education.d3Title": "순천향대학교 AI·빅데이터학과 학사",
@@ -169,10 +175,11 @@ const TRANSLATIONS = {
     "contact.title": "연락처",
     "contact.lead": "공동 연구나 궁금한 점이 있다면 편하게 연락 주세요.",
     "contact.emailLabel": "이메일",
+    "contact.labLabel": "연구실",
     "contact.portfolioLabel": "포트폴리오",
     "contact.portfolioValue": "Notion 포트폴리오",
     "contact.locationLabel": "위치",
-    "contact.locationValue": "서울특별시 동작구",
+    "contact.locationValue": "서울특별시 동작구 흑석로 84, 중앙대학교 310관",
   },
 
   /* ------------------------------------------------------------------ 영어 */
@@ -186,20 +193,22 @@ const TRANSLATIONS = {
     "nav.brand": "Sangmin Kim",
     "nav.research": "Research",
     "nav.publications": "Publications",
+    "nav.patents": "Patents",
     "nav.experience": "Experience",
+    "nav.education": "Education",
     "nav.awards": "Awards",
     "nav.contact": "Contact",
 
+    "intro.eyebrow": "Open to research collaboration",
     "intro.name": "Sangmin Kim",
     "intro.nameSub": "김상민",
     "intro.role": "Ph.D. Student",
     "intro.affil":
-      "Dept. of Security Convergence, Chung-Ang University · Privacy, Unlearning, and Robust Engineering Lab",
+      'Dept. of Security Convergence, Chung-Ang University · <a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">PURE Lab</a>',
     "intro.bio":
       "My work has centered on forecasting and classification across domains such as time series and text. I have applied AI to problems with real social cost — detecting voice-phishing utterances and online grooming — and I now focus on machine unlearning: building models that satisfy privacy requirements and remain trustworthy at the same time.",
-    "intro.linkEmail": "Email",
+    "intro.linkEmail": "Send an email",
     "intro.linkPortfolio": "Portfolio",
-    "intro.linkPubs": "Publications",
 
     "research.title": "Research Interests",
     "research.i1Title": "Machine Unlearning",
@@ -227,15 +236,18 @@ const TRANSLATIONS = {
     "badge.workshop": "Workshop",
     "badge.granted": "Granted",
     "badge.filed": "Filed",
-    "link.paper": "Paper",
+    "link.kipris": "View on KIPRIS",
 
     "publications.title": "Publications",
-    "publications.note": "Reverse chronological · my name in bold.",
+    "publications.note":
+      "Reverse chronological · my name in bold. Titles link to the full text.",
 
     "publications.p1Title":
       "An Image Generation Framework Integrating Invisible Watermarking and Selective Class Unlearning",
     "publications.p1Authors":
-      '<span class="todo">Authors to be confirmed</span> · <span class="me">Kim, S.</span> third author',
+      'Park, S., Lee, B., <span class="me">Kim, S.</span>, Chae, S., Lee, M., &amp; Rho, S.',
+    "publications.p1Desc":
+      "Combines class-selective unlearning for generative models with invisible watermarking for provenance verification in a single framework — two lines of work that prior research had treated separately.",
 
     "publications.p2Venue": "ECAI 2025 Workshop on Trustworthy AI (TRUST-AI)",
     "publications.p2Desc":
@@ -260,11 +272,11 @@ const TRANSLATIONS = {
       "ConvBiLSTM-AE combines 1D convolution with bidirectional LSTM to detect anomalies in multivariate industrial control-system time series through unsupervised learning, validated on the HAI 23.05 dataset.",
 
     "publications.p7Title":
-      "A Study on the Relationship Between Vehicle Speed, Traffic Safety Facilities, and Pedestrian Presence",
+      "A Study on the Relationship between Vehicle Speed and the Presence of Traffic Safety Infrastructure and Pedestrians",
     "publications.p7Authors":
-      '<span class="todo">Authors to be confirmed</span> · <span class="me">Kim, S.</span> third author',
+      'Kim, S., Lee, B., <span class="me">Kim, S.</span>, &amp; Noh, B.',
     "publications.p7Venue":
-      "Proceedings of the KICS Conference on Artificial Intelligence",
+      "The 4th Korea Artificial Intelligence Conference (KICS)",
     "publications.p7Desc":
       "Analyzes school-zone CCTV footage with YOLOv7 and DeepSORT to quantify how traffic lights, speed bumps, and pedestrian presence affect vehicle speed.",
 
@@ -272,11 +284,11 @@ const TRANSLATIONS = {
       "Forecasts daily peak load for buildings using seven day-of-week-specific MLPs, and explains each input variable's contribution with Kernel SHAP.",
 
     "publications.p9Title":
-      "Deriving Adolescent Problems from an Emotional Dialogue Corpus",
+      "Identifying Issues Facing Youth through an Emotional Dialogue Corpus",
     "publications.p9Authors":
       '<span class="me">Kim, S.</span>, Lee, B., &amp; Woo, J.',
     "publications.p9Venue":
-      "Proceedings of the Korean Society of Computer Information Conference",
+      "Proceedings of the KSCI Winter Conference",
     "publications.p9Desc":
       "Analyzes 40,879 utterances from the AI-Hub emotional dialogue corpus to relate the problems adolescents face to their emotional distribution.",
 
@@ -315,7 +327,8 @@ const TRANSLATIONS = {
     "education.d1Year": "2026.03<br />– present",
     "education.d1Title":
       "Ph.D. in Security Convergence, Chung-Ang University",
-    "education.d1Desc": "Privacy, Unlearning, and Robust Engineering Lab",
+    "education.d1Desc":
+      '<a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">Privacy, Unlearning, and Robust Engineering Lab</a>',
     "education.d2Title":
       "M.S. in Security Convergence, Chung-Ang University",
     "education.d2Desc": "Industrial Security Technology · GPA 4.35 / 4.5",
@@ -362,10 +375,12 @@ const TRANSLATIONS = {
     "contact.lead":
       "Feel free to reach out about collaborations or anything you're curious about.",
     "contact.emailLabel": "Email",
+    "contact.labLabel": "Lab",
     "contact.portfolioLabel": "Portfolio",
     "contact.portfolioValue": "Notion portfolio",
     "contact.locationLabel": "Location",
-    "contact.locationValue": "Dongjak-gu, Seoul, South Korea",
+    "contact.locationValue":
+      "Bldg. 310, Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul",
   },
 };
 
@@ -464,3 +479,60 @@ document.getElementById("theme-toggle")?.addEventListener("click", () => {
 
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+/* ------------------------------------------------- 상단 탭 현재 위치 표시 */
+
+(function initScrollSpy() {
+  const tabs = [...document.querySelectorAll(".nav__tab")];
+  if (!tabs.length) return;
+
+  // 탭과 섹션을 짝지어 둡니다 (문서 순서 = 탭 순서).
+  const pairs = tabs
+    .map((tab) => {
+      const id = tab.getAttribute("href")?.slice(1);
+      return { tab, section: id ? document.getElementById(id) : null };
+    })
+    .filter((p) => p.section);
+
+  if (!pairs.length) return;
+
+  // 헤더 바로 아래 지점을 기준선으로 삼고, 그 선을 지나는 섹션을 현재 섹션으로 봅니다.
+  const PROBE_OFFSET = 96;
+
+  function activeSection() {
+    const hit = pairs.find(({ section }) => {
+      const r = section.getBoundingClientRect();
+      return r.top <= PROBE_OFFSET && r.bottom > PROBE_OFFSET;
+    });
+    if (hit) return hit.section;
+
+    // 페이지 맨 아래에서는 마지막 섹션을 현재로 둡니다.
+    const atBottom =
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight - 2;
+    return atBottom ? pairs[pairs.length - 1].section : null;
+  }
+
+  function update() {
+    const current = activeSection();
+    pairs.forEach(({ tab, section }) => {
+      if (section === current) tab.setAttribute("aria-current", "true");
+      else tab.removeAttribute("aria-current");
+    });
+  }
+
+  let ticking = false;
+  function schedule() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      ticking = false;
+      update();
+    });
+  }
+
+  window.addEventListener("scroll", schedule, { passive: true });
+  window.addEventListener("resize", schedule);
+  window.addEventListener("hashchange", schedule);
+  update();
+})();

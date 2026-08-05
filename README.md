@@ -11,10 +11,13 @@
 | --- | --- |
 | `index.html` | 페이지 구조 (인트로 / 연구 / 논문 / 특허 / 경력 / 학력 / 수상 / 연락처) |
 | `styles.css` | 스타일. 맨 위 `:root` 블록에서 색·폰트·본문 폭을 한 번에 바꿀 수 있습니다 |
-| `app.js` | 한국어/영어 번역 사전, 언어 토글, 다크모드 토글 |
+| `app.js` | 한국어/영어 번역 사전, 언어 토글, 다크모드 토글, 상단 탭 현재 위치 표시 |
+| `papers/` | 온라인 공개본이 없는 논문 원문 PDF |
 | `.nojekyll` | GitHub Pages의 Jekyll 처리를 끕니다 |
 
-폰트는 [Pretendard](https://github.com/orioncactus/pretendard)를 CDN에서 불러옵니다.
+본문은 [Pretendard](https://github.com/orioncactus/pretendard),
+장식용 숫자·영문 이름은 Playfair Display를 CDN에서 불러옵니다.
+강조색은 [PURE Lab 홈페이지](https://cau-purelab.github.io/)의 네이비 계열에 맞췄습니다.
 
 ## ⚠️ 개인정보
 
@@ -89,19 +92,26 @@ python3 -m http.server 8000
 git add -A && git commit -m "내용 수정" && git push
 ```
 
-## 배포 전에 채워야 할 항목
+## 논문 링크
 
-논문 2건의 저자가 아직 자리표시자입니다. 화면에 **주황색으로 표시**되니
-바로 찾을 수 있습니다. `index.html`과 `app.js`에서 `todo` 클래스를 지우고
-실제 저자로 바꾸세요.
+9편 중 8편은 제목을 누르면 원문이 열립니다.
 
-- [ ] Journal of Platform Technology 2025.12 (비가시성 워터마킹) — 공동 저자
-- [ ] 한국통신학회 인공지능 학술대회 2023.09 (교통안전시설물) — 공동 저자
+| 논문 | 링크 |
+| --- | --- |
+| 비가시성 워터마킹 (JPT 2025) | `papers/` 로컬 PDF |
+| Discriminator-Guided Unlearning (TRUST-AI 2025) | CEUR-WS |
+| Machine Unlearning into SDT (FedCSIS 2025) | Annals of CSIS |
+| Online Grooming (CMES 2025) | DOI |
+| 보이스피싱 탐지 (한국전자거래학회지 2024) | **없음** |
+| Advancing Autoencoder (CMC 2024) | TechScience |
+| 교통안전시설물 (KICS 2023) | `papers/` 로컬 PDF |
+| RAID (Sustainability 2023) | MDPI |
+| 감성대화 말뭉치 (KSCI 2022) | `papers/` 로컬 PDF + DBpia |
 
-DBpia·KCI가 로그인·JS 렌더링이라 자동으로 확인하지 못했습니다.
+## 남은 항목
 
-선택 사항:
-
+- [ ] 보이스피싱 논문 (한국전자거래학회지 2024) 링크 — DBpia/KCI 주소나 PDF를
+      `papers/` 에 넣고 `index.html`의 해당 항목을 다른 논문처럼 바꾸면 됩니다
 - [ ] Google Scholar · ORCID 링크 추가
 - [ ] 프로필 사진, OG 이미지
 - [ ] 개인정보를 지운 CV PDF
