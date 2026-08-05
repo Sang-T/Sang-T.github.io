@@ -1,48 +1,54 @@
-/* ---------- Design tokens ---------- */
+/* ==================================================================
+ * 디자인 토큰
+ * 색·간격·폰트를 여기서 한 번에 바꿀 수 있습니다.
+ * ================================================================== */
 :root {
-  --bg: #ffffff;
-  --bg-alt: #f6f7f9;
+  /* 종이 느낌의 밝은 배경 + 잉크 톤 본문 */
+  --bg: #fdfcfa;
   --surface: #ffffff;
-  --text: #16191d;
-  --text-muted: #5c636e;
-  --border: #e3e6ea;
-  --accent: #3b5bdb;
-  --accent-soft: #edf0fe;
-  --shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 8px 24px rgba(16, 24, 40, 0.06);
+  --text: #1c1b19;
+  --text-muted: #6b6862;
+  --text-faint: #94908a;
+  --border: #e7e3dc;
+  --accent: #34618e;
+  --accent-weak: #eef2f7;
 
-  --radius: 12px;
-  --maxw: 880px;
-  --font: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    system-ui, sans-serif;
+  --radius: 8px;
+  --maxw: 46rem; /* 약 736px — 한 줄이 길어지지 않도록 */
+  --gutter: 1.5rem;
+
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
 }
 
 :root[data-theme="dark"] {
-  --bg: #0f1115;
-  --bg-alt: #14171d;
-  --surface: #191d24;
-  --text: #e8eaed;
-  --text-muted: #9aa3af;
-  --border: #272c34;
-  --accent: #8ea6ff;
-  --accent-soft: #1c2333;
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --bg: #16171a;
+  --surface: #1c1e22;
+  --text: #e9e7e3;
+  --text-muted: #a09d97;
+  --text-faint: #7c7973;
+  --border: #2b2d32;
+  --accent: #8ab4e0;
+  --accent-weak: #1e2530;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f1115;
-    --bg-alt: #14171d;
-    --surface: #191d24;
-    --text: #e8eaed;
-    --text-muted: #9aa3af;
-    --border: #272c34;
-    --accent: #8ea6ff;
-    --accent-soft: #1c2333;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+    --bg: #16171a;
+    --surface: #1c1e22;
+    --text: #e9e7e3;
+    --text-muted: #a09d97;
+    --text-faint: #7c7973;
+    --border: #2b2d32;
+    --accent: #8ab4e0;
+    --accent-weak: #1e2530;
   }
 }
 
-/* ---------- Base ---------- */
+/* ==================================================================
+ * 기본
+ * ================================================================== */
 *,
 *::before,
 *::after {
@@ -51,71 +57,100 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 4.5rem;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  font-family: var(--font);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.7;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: -0.003em;
+  word-break: keep-all; /* 한글 단어가 중간에서 끊기지 않도록 */
+  overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 h1,
 h2,
 h3 {
-  line-height: 1.25;
-  letter-spacing: -0.02em;
   margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
+  text-underline-offset: 0.2em;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-  border-radius: 4px;
+  border-radius: 3px;
+}
+
+::selection {
+  background: var(--accent-weak);
 }
 
 .container {
   width: 100%;
   max-width: var(--maxw);
   margin-inline: auto;
-  padding-inline: 1.5rem;
+  padding-inline: var(--gutter);
 }
 
 .skip-link {
   position: absolute;
   left: -9999px;
   top: 0;
+  z-index: 100;
   background: var(--accent);
   color: #fff;
   padding: 0.6rem 1rem;
-  z-index: 100;
+  border-radius: 0 0 var(--radius) 0;
 }
 
 .skip-link:focus {
-  left: 1rem;
-  top: 1rem;
+  left: 0;
 }
 
-/* ---------- Header / nav ---------- */
+/* ==================================================================
+ * 헤더
+ * ================================================================== */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: color-mix(in srgb, var(--bg) 85%, transparent);
-  backdrop-filter: blur(10px);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -125,14 +160,15 @@ a:hover {
   gap: 1rem;
   max-width: var(--maxw);
   margin-inline: auto;
-  padding: 0.75rem 1.5rem;
+  padding: 0.7rem var(--gutter);
 }
 
 .nav__brand {
-  font-weight: 700;
-  letter-spacing: 0.05em;
   color: var(--text);
-  font-size: 1.05rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .nav__brand:hover {
@@ -142,16 +178,14 @@ a:hover {
 
 .nav__links {
   display: flex;
-  gap: 1.25rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 1.1rem;
   margin-inline-start: auto;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
 
 .nav__links a {
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .nav__links a:hover {
@@ -162,7 +196,7 @@ a:hover {
 .nav__actions {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .lang-toggle {
@@ -170,19 +204,20 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 999px;
   overflow: hidden;
-  background: var(--surface);
 }
 
 .lang-toggle__btn {
+  appearance: none;
   border: 0;
   background: transparent;
   color: var(--text-muted);
   font: inherit;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  padding: 0.3rem 0.65rem;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.6rem;
   cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .lang-toggle__btn[aria-pressed="true"] {
@@ -191,17 +226,19 @@ a:hover {
 }
 
 .icon-btn {
+  appearance: none;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: transparent;
   color: var(--text-muted);
   border-radius: 999px;
-  width: 2rem;
-  height: 2rem;
+  width: 1.85rem;
+  height: 1.85rem;
   display: grid;
   place-items: center;
-  cursor: pointer;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .icon-btn:hover {
@@ -209,285 +246,280 @@ a:hover {
   border-color: var(--accent);
 }
 
-/* ---------- Hero ---------- */
-.hero {
-  padding: clamp(3.5rem, 12vw, 7rem) 0 clamp(2.5rem, 8vw, 4.5rem);
+/* ==================================================================
+ * 인트로
+ * ================================================================== */
+.intro {
+  padding: clamp(3rem, 9vw, 5rem) 0 clamp(2rem, 6vw, 3rem);
 }
 
-.hero__eyebrow {
-  color: var(--text-muted);
-  margin: 0 0 0.75rem;
-  font-size: 0.95rem;
-}
-
-.hero__title {
-  font-size: clamp(2.1rem, 7vw, 3.4rem);
+.intro__name {
+  font-size: clamp(1.9rem, 5.5vw, 2.5rem);
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  gap: 0.15em;
+  letter-spacing: -0.035em;
 }
 
-.hero__title-accent {
+.intro__name-sub {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-faint);
+  margin-top: 0.35rem;
+}
+
+.intro__role {
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--accent);
-  font-size: 0.5em;
-  font-weight: 600;
-  letter-spacing: 0;
 }
 
-.hero__tagline {
-  margin: 1.25rem 0 0;
-  max-width: 42ch;
+.intro__affil {
+  margin: 0.15rem 0 0;
+  font-size: 0.95rem;
   color: var(--text-muted);
-  font-size: 1.05rem;
 }
 
-.hero__cta {
+.intro__bio {
+  margin: 1.5rem 0 0;
+  color: var(--text-muted);
+}
+
+.intro__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 2rem;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.65rem 1.35rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border: 1px solid transparent;
-  transition: transform 0.12s ease, background-color 0.15s ease;
-}
-
-.btn:hover {
-  text-decoration: none;
-  transform: translateY(-1px);
-}
-
-.btn--primary {
-  background: var(--accent);
-  color: #fff;
-}
-
-.btn--ghost {
-  border-color: var(--border);
-  color: var(--text);
-  background: var(--surface);
-}
-
-.btn--ghost:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-/* ---------- Sections ---------- */
-.section {
-  padding: clamp(3rem, 9vw, 5rem) 0;
-}
-
-.section--alt {
-  background: var(--bg-alt);
-  border-block: 1px solid var(--border);
-}
-
-.section__title {
-  font-size: 1.5rem;
-  margin-bottom: 1.75rem;
-  position: relative;
-  padding-left: 0.85rem;
-}
-
-.section__title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.3em;
-  bottom: 0.3em;
-  width: 3px;
-  border-radius: 2px;
-  background: var(--accent);
-}
-
-/* ---------- About ---------- */
-.about p {
-  margin: 0 0 1rem;
-  color: var(--text-muted);
-  max-width: 62ch;
-}
-
-.about__facts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0 0;
-}
-
-.fact {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1rem;
-}
-
-.fact dt {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-  margin-bottom: 0.3rem;
-}
-
-.fact dd {
-  margin: 0;
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-/* ---------- Research interests ---------- */
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem;
-}
-
-.skill-group h3 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-  margin-bottom: 0.75rem;
-}
-
-.tags {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin: 0;
-  padding: 0;
-}
-
-.tags li {
-  background: var(--accent-soft);
-  color: var(--accent);
-  border-radius: 999px;
-  padding: 0.25rem 0.7rem;
-  font-size: 0.82rem;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
-/* ---------- Publications ---------- */
-.section__lead {
-  margin: -0.75rem 0 1.75rem;
+/* ==================================================================
+ * 섹션
+ * ================================================================== */
+.section {
+  padding: clamp(2.25rem, 6vw, 3.25rem) 0;
+  border-top: 1px solid var(--border);
+}
+
+.section__title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--text-faint);
+  margin-bottom: 1.5rem;
+}
+
+.section__note {
+  margin: -0.75rem 0 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+
+/* ==================================================================
+ * 연구 관심사
+ * ================================================================== */
+.interests {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.interest__title {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.interest__desc {
   color: var(--text-muted);
   font-size: 0.93rem;
-  max-width: 60ch;
-}
-
-.pubs {
-  list-style: none;
-  counter-reset: pub;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 1rem;
-}
-
-.pub {
-  counter-increment: pub;
-  position: relative;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.3rem 1.4rem 1.3rem 3.2rem;
-  transition: box-shadow 0.15s ease, border-color 0.15s ease;
-}
-
-.pub::before {
-  content: "[" counter(pub) "]";
-  position: absolute;
-  left: 1.3rem;
-  top: 1.3rem;
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  font-variant-numeric: tabular-nums;
-}
-
-.pub:hover {
-  box-shadow: var(--shadow);
-  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-}
-
-.pub__title {
-  font-size: 1.05rem;
-  margin-bottom: 0.4rem;
-}
-
-.pub__authors {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.pub__authors strong {
-  color: var(--text);
-}
-
-.pub__venue {
-  margin: 0.15rem 0 0;
-  font-size: 0.88rem;
-  font-style: italic;
-  color: var(--text-muted);
-}
-
-.pub__links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-/* ---------- Contact ---------- */
-.contact__lead {
-  color: var(--text-muted);
-  max-width: 52ch;
   margin: 0;
 }
 
-.contact__links {
-  list-style: none;
+.tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 1.75rem 0 0;
-  padding: 0;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.tags li {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-weak);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+}
+
+/* ==================================================================
+ * 연도 + 내용 2단 목록 (논문 / 특허 / 경력 / 학력 / 수상)
+ * ================================================================== */
+.entries {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  gap: 0 1rem;
+  align-items: baseline;
+}
+
+.entry__year {
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-faint);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  padding-top: 0.28em;
+}
+
+.entry__body > * {
+  margin: 0;
+}
+
+.entry__title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.entry__title a {
+  color: inherit;
+}
+
+.entry__title a:hover {
+  color: var(--accent);
+}
+
+.entry__authors {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+.entry__authors .me {
+  color: var(--text);
   font-weight: 600;
 }
 
-/* ---------- Footer ---------- */
-.site-footer {
-  padding: 2.5rem 0;
-  border-top: 1px solid var(--border);
+.entry__meta {
+  font-size: 0.875rem;
   color: var(--text-muted);
-  font-size: 0.85rem;
-  text-align: center;
+  margin-top: 0.15rem;
+}
+
+.entry__venue {
+  font-style: italic;
+}
+
+.entry__desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+.entry__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* 게재 형태 배지 */
+.badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  color: var(--text-faint);
+  vertical-align: 0.15em;
+  margin-inline-start: 0.4rem;
+  white-space: nowrap;
+}
+
+.badge--first {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: var(--accent-weak);
+}
+
+/* ==================================================================
+ * 연락처
+ * ================================================================== */
+.contact__lead {
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.contact__list {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.contact__list dt {
+  display: inline-block;
+  min-width: 5.5rem;
+  color: var(--text-faint);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.contact__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.5rem;
+}
+
+.contact__row dd {
+  margin: 0;
+}
+
+/* ==================================================================
+ * 푸터
+ * ================================================================== */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0 3rem;
+  font-size: 0.8rem;
+  color: var(--text-faint);
 }
 
 .site-footer p {
   margin: 0;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 560px) {
+/* ==================================================================
+ * 반응형
+ * ================================================================== */
+@media (max-width: 640px) {
   .nav__links {
     display: none;
   }
 
   .nav__actions {
     margin-inline-start: auto;
+  }
+
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .entry__year {
+    padding-top: 0;
   }
 }
 
@@ -501,5 +533,18 @@ a:hover {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .site-header,
+  .nav__actions,
+  .skip-link {
+    display: none;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
   }
 }
