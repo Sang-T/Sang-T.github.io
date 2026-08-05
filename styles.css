@@ -354,27 +354,23 @@ ol {
   position: relative;
 }
 
-.intro__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin: 0 0 1.1rem;
-  padding: 0.22rem 0.7rem 0.22rem 0.5rem;
-  border: 1px solid var(--border-strong);
-  border-radius: 999px;
-  background: var(--surface);
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--text-muted);
+/* 사진 + 본문 2단 (좁은 화면에서는 사진이 위로) */
+.intro__grid {
+  display: grid;
+  grid-template-columns: 8.75rem 1fr;
+  gap: 2rem;
+  align-items: start;
 }
 
-.intro__eyebrow::before {
-  content: "";
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background: #16a34a;
-  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+.intro__photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 354 / 472;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  background: var(--bg-soft);
 }
 
 .intro__name {
@@ -778,6 +774,15 @@ ol {
  * 반응형
  * ================================================================== */
 @media (max-width: 720px) {
+  .intro__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .intro__photo {
+    width: 7.5rem;
+  }
+
   .nav {
     flex-wrap: wrap;
     row-gap: 0.35rem;

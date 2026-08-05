@@ -4,6 +4,7 @@
  * HTML 의 data-i18n="키"      → 해당 요소의 텍스트를 바꿉니다.
  * HTML 의 data-i18n-html="키" → 마크업이 포함된 값을 넣습니다.
  *                               (저자 이름의 <span class="me"> 강조용)
+ * HTML 의 data-i18n-alt="키"  → 이미지의 alt 속성을 바꿉니다.
  *
  * 문구를 고칠 때는 ko / en 두 곳을 함께 수정하세요.
  * ================================================================== */
@@ -20,12 +21,13 @@ const TRANSLATIONS = {
     "nav.research": "연구",
     "nav.publications": "논문",
     "nav.patents": "특허",
+    "nav.projects": "프로젝트",
     "nav.experience": "경력",
     "nav.education": "학력",
     "nav.awards": "수상",
     "nav.contact": "연락처",
 
-    "intro.eyebrow": "공동 연구 제안을 환영합니다",
+    "intro.photoAlt": "김상민",
     "intro.name": "김상민",
     "intro.nameSub": "Sangmin Kim",
     "intro.role": "박사과정 (Ph.D. Student)",
@@ -62,7 +64,8 @@ const TRANSLATIONS = {
     "badge.workshop": "워크숍",
     "badge.granted": "등록",
     "badge.filed": "출원",
-    "link.kipris": "KIPRIS에서 보기",
+    "badge.grandPrize": "최우수상",
+    "badge.encouragement": "장려상",
 
     "publications.title": "논문",
     "publications.note":
@@ -114,20 +117,79 @@ const TRANSLATIONS = {
       "AI-Hub 감성대화 말뭉치 40,879건을 분석해 청소년이 겪는 주요 문제와 감정 분포의 관계를 밝혔습니다.",
 
     "patents.title": "특허",
+    "patents.note": "등록 2건 · 출원 4건",
+
     "patents.t1Title":
       "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
     "patents.t1Authors":
       '노병준, <span class="me">김상민</span>, 이병천, 정운영',
     "patents.t1Meta": "등록특허 제10-2984271호 · 순천향대학교 산학협력단",
     "patents.t1Sub":
-      "출원 2024.04.11 (10-2024-0048439) · 공개 2025.10.20 (10-2025-0150195) · 등록 2026.06.25",
+      "출원 2024.04.11 (10-2024-0048439) · 공고 2026.06.30 · 청구항 9항",
     "patents.t1Desc":
-      "통화 음성을 텍스트로 변환하는 경로와 속도·음조·음량 등 음성 특징을 추출하는 경로를 병렬로 두고, 두 정보를 함께 사용해 위험도를 산출합니다. 서버 통신 없이 단말에서 실시간으로 보이스피싱을 탐지합니다. 청구항 9항.",
+      "통화 음성을 텍스트로 변환하는 경로와 속도·음조·음량 등 음성 특징을 추출하는 경로를 병렬로 두고, 두 정보를 함께 사용해 위험도를 산출합니다. 서버 통신 없이 단말에서 실시간으로 보이스피싱을 탐지합니다.",
+
     "patents.t2Title":
-      "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
+      "딥 러닝 기반 자연어 처리 모델을 활용한, 온라인 그루밍 범죄 탐지 방법 및 그 장치",
     "patents.t2Authors":
+      '<span class="me">김상민</span>, 이병천, 문지훈, 노승민, 무아잠 마쿠수드',
+    "patents.t2Meta": "등록특허 제10-2934580호 · 중앙대학교 산학협력단",
+    "patents.t2Sub":
+      "출원 2024.11.14 (10-2024-0161744) · 공고 2026.03.05 · 청구항 12항",
+    "patents.t2Desc":
+      "SNS 대화 데이터를 전처리해 텍스트 분류 모델을 학습하고, 그 출력으로 온라인 그루밍 범죄를 탐지합니다. CMES 2025 논문의 기반이 된 발명입니다.",
+
+    "patents.t3Title":
+      "판별기 기반 조건부 생성적 적대 신경망에서의 선택적 데이터 망각 방법 및 그 장치",
+    "patents.t3Authors":
+      '노승민, <span class="me">김상민</span>, 이미영, 이병천',
+    "patents.t3Meta": "출원 10-2025-0133282 · 중앙대학교 산학협력단",
+
+    "patents.t4Title":
+      "선택적 지식 증류를 이용한 소프트 의사결정 트리 기반 머신 언러닝 방법",
+    "patents.t4Authors":
+      '이미영, 노승민, 이병천, <span class="me">김상민</span>, 박성우',
+    "patents.t4Meta": "출원 10-2025-0109528 · 중앙대학교 산학협력단",
+
+    "patents.t5Title":
+      "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
+    "patents.t5Authors":
       '노병준, <span class="me">김상민</span>, 이병천, 정운영',
-    "patents.t2Meta": "PCT 국제 출원 (PCT/KR2025-004854) · 순천향대학교",
+    "patents.t5Meta": "PCT 국제 출원 (PCT/KR2025-004854) · 순천향대학교",
+
+    "patents.t6Title":
+      "다변수 산업 사물 단말 관련 시계열 데이터에서 딥 러닝 모델을 기초로 한 이상 탐지 방법 및 그 장치",
+    "patents.t6Authors":
+      '<span class="me">김상민</span>, 이병천, 문지훈, 노승민, 무아잠 마쿠수드',
+    "patents.t6Meta": "출원 2024.11.14 · 중앙대학교 산학협력단",
+
+    "projects.title": "프로젝트",
+    "projects.j1Title":
+      "OMU-NIDS — 온라인 머신 언러닝 기반 네트워크 침입 탐지 시스템",
+    "projects.j1Team":
+      '팀 랜덤포레스트벌목꾼 · 임태인, <span class="me">김상민</span>, 이병천',
+    "projects.j1Meta":
+      "한국전자거래학회 추계학술대회 대학(원)생 아이디어 공모전",
+    "projects.j1Desc":
+      "오염 데이터가 섞인 침입 탐지 시스템을 전체 재학습 없이 복구하는 구조를 제안했습니다. 위험도 기준으로 삭제 순서를 정하는 큐, 희귀 클래스에 복제본을 더 주는 Adaptive k, 약해진 서브트리를 백그라운드에서 다시 만들어 교체하는 부분 재구성, 삭제 후 편향을 잡아 주는 버퍼로 무중단 운영을 목표로 했습니다.",
+    "projects.j1t1": "머신 언러닝",
+    "projects.j1t2": "스트림 학습",
+    "projects.j1t3": "트리 앙상블",
+
+    "projects.j2Title": "금융보안 법령 질의응답 RAG 모델",
+    "projects.j2Meta": "2025 금융 AI Challenge (DACON) · 283팀 중 15위",
+    "projects.j2Desc":
+      "금융위원회 등의 규제 문서를 조항 단위로 잘라 FAISS 지식베이스를 만들고, BM25 키워드 검색과 임베딩 의미 검색을 앙상블했습니다. Multi-Query로 질문을 확장하고 CrossEncoder 재순위화와 문서 압축을 거친 뒤, 4bit 양자화한 A.X-4.0-Light로 답변을 생성해 제한된 GPU에서도 돌아가게 했습니다.",
+    "projects.j2t1": "양자화",
+
+    "projects.j3Title": "캠퍼스 로그인 혁신 — DID 기반 신원 인증 시스템",
+    "projects.j3Team":
+      '전승훈, 강윤석, <span class="me">김상민</span>, 이병천',
+    "projects.j3Meta": "한국전자거래학회 DID 비즈니스 모델 특허 공모전",
+    "projects.j3Desc":
+      "자격 정보를 중앙 서버에 두지 않는 분산 신원(DID) 기반 캠퍼스 통합 로그인입니다. 비밀번호 입력이나 주기적 갱신 없이 개인 키 인증과 분산원장 검증으로 로그인하며, SQL 인젝션처럼 중앙 서버를 노리는 공격 표면 자체를 줄입니다.",
+    "projects.j3t1": "분산원장",
+    "projects.j3t2": "신원 인증",
 
     "experience.title": "경력",
     "experience.e1Title": "한국전자통신연구원 (ETRI) · 연구연수생",
@@ -152,25 +214,14 @@ const TRANSLATIONS = {
 
     "awards.title": "수상 및 활동",
     "awards.a1Title": "우수 논문상 · 한국전자거래학회 추계학술대회",
-    "awards.a1Desc": "패턴 보존 기반 생성 모델의 클래스 선택적 언러닝 프레임워크",
     "awards.a2Title": "최우수상 · 한국전자거래학회 대학(원)생 아이디어 공모전",
-    "awards.a2Desc": "OMU-NIDS — 온라인 머신 언러닝 기반 네트워크 침입 탐지 시스템",
     "awards.a3Title": "2025 금융 AI Challenge · 283팀 중 15위",
-    "awards.a3Desc":
-      "금융 법령 문서를 지식베이스로 삼는 RAG 기반 질의응답 모델. BM25와 FAISS 하이브리드 검색, 재순위화, 문서 압축을 적용했습니다.",
     "awards.a4Title": "LG Aimers 6기 · 794팀 중 45위 (상위 5%)",
-    "awards.a4Desc":
-      "난임 환자 대상 임신 성공 확률 예측. LGBM·XGBoost·CatBoost 앙상블.",
     "awards.a5Title": "장려상 · 중앙대학교 가상자산 추적대회",
-    "awards.a5Desc": "Chainalysis 활용",
     "awards.a6Title": "장려상 · DID 비즈니스 모델 특허 공모전",
-    "awards.a6Desc": "한국전자거래학회 · 분산 신원 인증 기반 캠퍼스 통합 로그인",
     "awards.a7Title": "실습 조교 · 안전한 데이터 활용 전문가 과정",
-    "awards.a7Desc": "중앙대학교 재직자 대상 단기교육 (Data & Privacy)",
     "awards.a8Title": "LG Aimers 4기 · 상위 7%",
-    "awards.a8Desc": "MQL 데이터 기반 B2B 영업 기회 창출 예측",
     "awards.a9Title": "대상 · 순천향대학교 SW·AI 페스티벌",
-    "awards.a9Desc": "딥러닝과 OCR을 이용한 SNS상 온라인 그루밍 탐지",
 
     "contact.title": "연락처",
     "contact.lead": "공동 연구나 궁금한 점이 있다면 편하게 연락 주세요.",
@@ -194,12 +245,13 @@ const TRANSLATIONS = {
     "nav.research": "Research",
     "nav.publications": "Publications",
     "nav.patents": "Patents",
+    "nav.projects": "Projects",
     "nav.experience": "Experience",
     "nav.education": "Education",
     "nav.awards": "Awards",
     "nav.contact": "Contact",
 
-    "intro.eyebrow": "Open to research collaboration",
+    "intro.photoAlt": "Sangmin Kim",
     "intro.name": "Sangmin Kim",
     "intro.nameSub": "김상민",
     "intro.role": "Ph.D. Student",
@@ -236,7 +288,8 @@ const TRANSLATIONS = {
     "badge.workshop": "Workshop",
     "badge.granted": "Granted",
     "badge.filed": "Filed",
-    "link.kipris": "View on KIPRIS",
+    "badge.grandPrize": "Grand Prize",
+    "badge.encouragement": "Encouragement Award",
 
     "publications.title": "Publications",
     "publications.note":
@@ -293,6 +346,8 @@ const TRANSLATIONS = {
       "Analyzes 40,879 utterances from the AI-Hub emotional dialogue corpus to relate the problems adolescents face to their emotional distribution.",
 
     "patents.title": "Patents",
+    "patents.note": "2 granted · 4 filed",
+
     "patents.t1Title":
       "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
     "patents.t1Authors":
@@ -300,15 +355,77 @@ const TRANSLATIONS = {
     "patents.t1Meta":
       "Korean Patent No. 10-2984271 · Soonchunhyang University IACF",
     "patents.t1Sub":
-      "Filed 2024.04.11 (10-2024-0048439) · Published 2025.10.20 (10-2025-0150195) · Granted 2026.06.25",
+      "Filed 2024.04.11 (10-2024-0048439) · Published 2026.06.30 · 9 claims",
     "patents.t1Desc":
-      "Runs two parallel paths over call audio — one transcribing speech to text, the other extracting acoustic features such as rate, pitch, and volume — and combines both to score risk. Detects voice phishing in real time on the device, with no server round trip. 9 claims.",
+      "Runs two parallel paths over call audio — one transcribing speech to text, the other extracting acoustic features such as rate, pitch, and volume — and combines both to score risk. Detects voice phishing in real time on the device, with no server round trip.",
+
     "patents.t2Title":
-      "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
+      "Method and Apparatus for Detecting Online Grooming Crimes Using Deep Learning-Based Natural Language Processing Models",
     "patents.t2Authors":
-      'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
+      '<span class="me">Kim, S.</span>, Lee, B., Moon, J., Rho, S., &amp; Maqsood, M.',
     "patents.t2Meta":
+      "Korean Patent No. 10-2934580 · Chung-Ang University IACF",
+    "patents.t2Sub":
+      "Filed 2024.11.14 (10-2024-0161744) · Published 2026.03.05 · 12 claims",
+    "patents.t2Desc":
+      "Preprocesses SNS conversation data, trains a text classification model on it, and detects online grooming from the model output. The invention behind the CMES 2025 paper.",
+
+    "patents.t3Title":
+      "Method and Apparatus for Selective Data Forgetting in Discriminator-Based Conditional Generative Adversarial Networks",
+    "patents.t3Authors":
+      'Rho, S., <span class="me">Kim, S.</span>, Lee, M., &amp; Lee, B.',
+    "patents.t3Meta":
+      "Application 10-2025-0133282 · Chung-Ang University IACF",
+
+    "patents.t4Title":
+      "Machine Unlearning Method Based on a Soft Decision Tree Using Selective Knowledge Distillation",
+    "patents.t4Authors":
+      'Lee, M., Rho, S., Lee, B., <span class="me">Kim, S.</span>, &amp; Park, S.',
+    "patents.t4Meta":
+      "Application 10-2025-0109528 · Chung-Ang University IACF",
+
+    "patents.t5Title":
+      "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
+    "patents.t5Authors":
+      'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
+    "patents.t5Meta":
       "PCT international application (PCT/KR2025-004854) · Soonchunhyang University",
+
+    "patents.t6Title":
+      "Method and Apparatus for Anomaly Detection Based on Deep Learning Models in Time Series Data Related to Multivariate Industrial Things Terminals",
+    "patents.t6Authors":
+      '<span class="me">Kim, S.</span>, Lee, B., Moon, J., Rho, S., &amp; Maqsood, M.',
+    "patents.t6Meta": "Filed 2024.11.14 · Chung-Ang University IACF",
+
+    "projects.title": "Projects",
+    "projects.j1Title":
+      "OMU-NIDS — Online Machine Unlearning-Based Network Intrusion Detection System",
+    "projects.j1Team":
+      'Team RandomForest Loggers · Lim, T., <span class="me">Kim, S.</span>, &amp; Lee, B.',
+    "projects.j1Meta":
+      "KSEBS Fall Conference Student Idea Competition",
+    "projects.j1Desc":
+      "A design for recovering a poisoned intrusion detection system without full retraining: a queue that orders deletions by risk score, an adaptive k that gives rare classes more replicas, background partial rebuilding that swaps in weakened subtrees, and a bias buffer that corrects drift after deletion — all aimed at zero-downtime operation.",
+    "projects.j1t1": "Machine unlearning",
+    "projects.j1t2": "Stream learning",
+    "projects.j1t3": "Tree ensembles",
+
+    "projects.j2Title":
+      "RAG Question Answering over Financial Security Regulations",
+    "projects.j2Meta": "2025 Financial AI Challenge (DACON) · 15th of 283 teams",
+    "projects.j2Desc":
+      "Chunks regulatory documents article by article into a FAISS knowledge base and ensembles BM25 keyword search with embedding-based semantic search. Multi-Query expands the question, a CrossEncoder reranks, contextual compression trims the context, and a 4-bit quantized A.X-4.0-Light generates the answer within a constrained GPU budget.",
+    "projects.j2t1": "Quantization",
+
+    "projects.j3Title":
+      "Campus Login Reimagined — DID-Based Identity Authentication",
+    "projects.j3Team":
+      'Jeon, S., Kang, Y., <span class="me">Kim, S.</span>, &amp; Lee, B.',
+    "projects.j3Meta": "KSEBS DID Business Model Patent Competition",
+    "projects.j3Desc":
+      "A campus single sign-on built on decentralized identifiers, keeping credentials off any central server. Users authenticate with a private key verified against a distributed ledger — no password entry or rotation — which removes the attack surface that SQL injection and similar server-side attacks depend on.",
+    "projects.j3t1": "Distributed ledger",
+    "projects.j3t2": "Identity authentication",
 
     "experience.title": "Experience",
     "experience.e1Title":
@@ -340,36 +457,19 @@ const TRANSLATIONS = {
     "awards.title": "Awards & Activities",
     "awards.a1Title":
       "Best Paper Award · KSEBS Fall Conference",
-    "awards.a1Desc":
-      "A pattern-preserving class-selective unlearning framework for generative models",
     "awards.a2Title":
       "Grand Prize · KSEBS Student Idea Competition",
-    "awards.a2Desc":
-      "OMU-NIDS — an online machine unlearning-based network intrusion detection system",
     "awards.a3Title": "2025 Financial AI Challenge · 15th of 283 teams",
-    "awards.a3Desc":
-      "A RAG question-answering model over financial regulation documents, using hybrid BM25 + FAISS retrieval, reranking, and contextual compression.",
     "awards.a4Title": "LG Aimers 6th · 45th of 794 teams (top 5%)",
-    "awards.a4Desc":
-      "Predicting pregnancy success for infertility patients with an LGBM / XGBoost / CatBoost ensemble.",
     "awards.a5Title":
       "Encouragement Award · Chung-Ang University Cryptocurrency Tracing Competition",
-    "awards.a5Desc": "Using Chainalysis",
     "awards.a6Title":
       "Encouragement Award · DID Business Model Patent Competition",
-    "awards.a6Desc":
-      "KSEBS · Campus single sign-on based on decentralized identifiers",
     "awards.a7Title":
       "Teaching Assistant · Safe Data Utilization Expert Program",
-    "awards.a7Desc":
-      "Chung-Ang University short course for working professionals (Data & Privacy)",
     "awards.a8Title": "LG Aimers 4th · Top 7%",
-    "awards.a8Desc":
-      "Predicting B2B sales opportunity conversion from MQL data",
     "awards.a9Title":
       "Grand Prize · Soonchunhyang University SW·AI Festival",
-    "awards.a9Desc":
-      "Detecting online grooming on social networks with deep learning and OCR",
 
     "contact.title": "Contact",
     "contact.lead":
@@ -404,6 +504,12 @@ function applyLanguage(lang) {
   document.querySelectorAll("[data-i18n-html]").forEach((el) => {
     const value = dict[el.dataset.i18nHtml];
     if (value !== undefined) el.innerHTML = value;
+  });
+
+  // 이미지 대체 텍스트
+  document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+    const value = dict[el.dataset.i18nAlt];
+    if (value !== undefined) el.setAttribute("alt", value);
   });
 
   document.title = dict["meta.title"];
