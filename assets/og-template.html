@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 0 88px;
+    background: #ffffff;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    color: #14181f;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 상단 네이비 바 */
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 10px;
+    background: #1e3a8a;
+  }
+
+  /* 오른쪽 아래 옅은 번짐 */
+  body::after {
+    content: "";
+    position: absolute;
+    right: -160px;
+    bottom: -220px;
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f2f5fb 0%, transparent 70%);
+  }
+
+  .photo {
+    width: 260px;
+    height: 347px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid #e5e8ed;
+    box-shadow: 0 4px 6px rgba(20,24,31,.04), 0 18px 40px rgba(20,24,31,.10);
+    flex-shrink: 0;
+  }
+
+  .text { position: relative; z-index: 1; }
+
+  .name {
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: -.045em;
+    line-height: 1.05;
+  }
+
+  .name-en {
+    display: block;
+    margin-top: 10px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0;
+    color: #8b94a3;
+  }
+
+  .role {
+    margin-top: 34px;
+    font-size: 27px;
+    font-weight: 600;
+    color: #1e3a8a;
+  }
+
+  .affil {
+    margin-top: 8px;
+    font-size: 22px;
+    color: #55606f;
+    line-height: 1.5;
+  }
+
+  .topics {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .topics span {
+    font-size: 19px;
+    font-weight: 500;
+    color: #1e3a8a;
+    background: #eef2fb;
+    border-radius: 999px;
+    padding: 7px 18px;
+  }
+
+  .url {
+    position: absolute;
+    left: 88px;
+    bottom: 44px;
+    font-size: 19px;
+    color: #8b94a3;
+    letter-spacing: .01em;
+  }
+</style>
+</head>
+<body>
+  <img class="photo" src="profile.jpg" alt="" />
+
+  <div class="text">
+    <h1 class="name">
+      김상민
+      <span class="name-en">Sangmin Kim</span>
+    </h1>
+    <p class="role">박사과정 · Ph.D. Student</p>
+    <p class="affil">중앙대학교 융합보안학과 · PURE Lab</p>
+    <div class="topics">
+      <span>Machine Unlearning</span>
+      <span>AI Security</span>
+      <span>LLM</span>
+    </div>
+  </div>
+
+  <div class="url">sang-t.github.io</div>
+</body>
+</html>
