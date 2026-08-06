@@ -200,7 +200,7 @@ const TRANSLATIONS = {
     "experience.e3Desc":
       "공공기반 재활운동 빅데이터 플랫폼 기술 개발 과제에 참여했습니다. 임상 raw 데이터를 자동으로 전처리해 JSON으로 바꾸고, RESTful API로 DB에 적재하는 코드를 만들었습니다.",
 
-    "education.title": "학력",
+    "education.title": "학력 및 자격증",
     "education.d1Year": "2026.03<br />– 현재",
     "education.d1Title": "중앙대학교 융합보안학과 박사과정",
     "education.d1Desc":
@@ -213,6 +213,14 @@ const TRANSLATIONS = {
     "education.d3Desc": "융합창업학부 SW스타트업 복수전공 · 학점 4.08 / 4.5",
     "education.d4Title": "대전대신고등학교",
     "education.d4Desc": "대전광역시",
+
+    "certs.title": "자격증",
+    "certs.c1Name": "SQL 개발자 (SQLD)",
+    "certs.c1Meta": "한국데이터산업진흥원 · 2022.04",
+    "certs.c2Name": "데이터분석 준전문가 (ADsP)",
+    "certs.c2Meta": "한국데이터산업진흥원 · 2021.09",
+    "certs.c3Name": "한국사능력검정시험 1급",
+    "certs.c3Meta": "국사편찬위원회 · 2021.02",
 
     "awards.title": "수상",
     "awards.a1Title": "우수 논문상 · 한국전자거래학회 추계학술대회",
@@ -436,7 +444,7 @@ const TRANSLATIONS = {
     "experience.e3Desc":
       "Worked on a public rehabilitation-exercise big data platform. I wrote code that automatically preprocessed raw clinical data into JSON and loaded it into the database through a RESTful API.",
 
-    "education.title": "Education",
+    "education.title": "Education & Certifications",
     "education.d1Year": "2026.03<br />– present",
     "education.d1Title":
       "Ph.D. in Security Convergence, Chung-Ang University",
@@ -454,6 +462,14 @@ const TRANSLATIONS = {
       "Double major in SW Startup, School of Convergence Entrepreneurship · GPA 4.08 / 4.5",
     "education.d4Title": "Daejeon Daeshin High School",
     "education.d4Desc": "Daejeon, South Korea",
+
+    "certs.title": "Certifications",
+    "certs.c1Name": "SQL Developer (SQLD)",
+    "certs.c1Meta": "Korea Data Agency · 2022.04",
+    "certs.c2Name": "Advanced Data Analytics Semi-Professional (ADsP)",
+    "certs.c2Meta": "Korea Data Agency · 2021.09",
+    "certs.c3Name": "Korean History Proficiency Test, Level 1",
+    "certs.c3Meta": "National Institute of Korean History · 2021.02",
 
     "awards.title": "Awards",
     "awards.a1Title": "Best Paper Award · KSEBS Fall Conference",
