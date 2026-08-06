@@ -230,6 +230,7 @@ const TRANSLATIONS = {
     "awards.a5Title": "대상 · 순천향대학교 SW·AI 페스티벌",
 
     "contact.title": "연락처",
+    "contact.lead": "궁금한 점이 있다면 편하게 연락 주세요.",
     "contact.emailLabel": "이메일",
     "contact.labLabel": "연구실",
     "contact.portfolioLabel": "포트폴리오",
@@ -263,7 +264,7 @@ const TRANSLATIONS = {
     "intro.affil":
       'Dept. of Security Convergence, Chung-Ang University · <a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">PURE Lab</a>',
     "intro.bio":
-      "Starting from forecasting and classifying data across domains such as time series and text, I went on to apply AI to problems with real social cost, including voice phishing and online grooming detection. More recently I have been building models with machine unlearning that are both efficient and trustworthy.",
+      "Starting from forecasting and classifying data across domains such as time series and text, I went on to apply AI to social problems like voice phishing and online grooming detection. More recently I have been building efficient and trustworthy models with machine unlearning.",
     "intro.linkEmail": "Send an email",
     "intro.linkPortfolio": "Portfolio",
 
@@ -478,6 +479,7 @@ const TRANSLATIONS = {
     "awards.a5Title": "Grand Prize · Soonchunhyang University SW·AI Festival",
 
     "contact.title": "Contact",
+    "contact.lead": "Feel free to reach out if you have any questions.",
     "contact.emailLabel": "Email",
     "contact.labLabel": "Lab",
     "contact.portfolioLabel": "Portfolio",
