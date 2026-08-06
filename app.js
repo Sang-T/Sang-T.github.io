@@ -34,7 +34,7 @@ const TRANSLATIONS = {
     "intro.affil":
       '중앙대학교 융합보안학과 · <a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">PURE Lab</a>',
     "intro.bio":
-      "시계열과 텍스트 등 여러 도메인의 데이터를 예측하고 분류하는 연구를 해 왔습니다. 보이스피싱과 온라인 그루밍 탐지처럼 AI로 사회 문제를 푸는 연구를 수행했습니다. 지금은 머신 언러닝으로 개인정보 보호와 신뢰성을 함께 만족하는 모델을 만듭니다.",
+      "시계열과 텍스트 등 여러 도메인의 데이터를 예측하고 분류하는 연구에서 출발해, 보이스피싱과 온라인 그루밍 탐지처럼 AI로 사회 문제를 푸는 연구를 해 왔습니다. 최근에는 머신 언러닝으로 효율적이면서 신뢰할 수 있는 모델을 개발하고 있습니다.",
     "intro.linkEmail": "이메일 보내기",
     "intro.linkPortfolio": "포트폴리오",
 
@@ -230,7 +230,6 @@ const TRANSLATIONS = {
     "awards.a5Title": "대상 · 순천향대학교 SW·AI 페스티벌",
 
     "contact.title": "연락처",
-    "contact.lead": "공동 연구나 궁금한 점이 있다면 편하게 연락 주세요.",
     "contact.emailLabel": "이메일",
     "contact.labLabel": "연구실",
     "contact.portfolioLabel": "포트폴리오",
@@ -264,7 +263,7 @@ const TRANSLATIONS = {
     "intro.affil":
       'Dept. of Security Convergence, Chung-Ang University · <a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">PURE Lab</a>',
     "intro.bio":
-      "My work has centered on forecasting and classifying data across domains such as time series and text. I have applied AI to problems with real social cost, including voice phishing and online grooming detection. I now use machine unlearning to build models that protect privacy and stay trustworthy at once.",
+      "Starting from forecasting and classifying data across domains such as time series and text, I went on to apply AI to problems with real social cost, including voice phishing and online grooming detection. More recently I have been building models with machine unlearning that are both efficient and trustworthy.",
     "intro.linkEmail": "Send an email",
     "intro.linkPortfolio": "Portfolio",
 
@@ -479,8 +478,6 @@ const TRANSLATIONS = {
     "awards.a5Title": "Grand Prize · Soonchunhyang University SW·AI Festival",
 
     "contact.title": "Contact",
-    "contact.lead":
-      "Feel free to reach out about collaborations or anything you're curious about.",
     "contact.emailLabel": "Email",
     "contact.labLabel": "Lab",
     "contact.portfolioLabel": "Portfolio",
