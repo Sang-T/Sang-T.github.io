@@ -179,6 +179,16 @@ const TRANSLATIONS = {
     "projects.j3t1": "분산원장",
     "projects.j3t2": "신원 인증",
 
+    "projects.j4Title": "난임 환자 임신 성공 확률 예측",
+    "projects.j4Meta": "LG Aimers 6기 · 794팀 중 45위 (상위 5%)",
+    "projects.j4Desc":
+      "결측치를 그룹별 통계로 채우고 배아 보존율 같은 파생변수를 만들었습니다. LGBM, XGBoost, CatBoost를 Optuna로 튜닝한 뒤 세 모델의 예측 확률을 가중 평균했습니다.",
+
+    "projects.j5Title": "MQL 데이터 기반 B2B 영업 기회 예측",
+    "projects.j5Meta": "LG Aimers 4기 · 상위 7%",
+    "projects.j5Desc":
+      "고객 관련 28개 피처로 영업 전환 여부를 분류했습니다. 범주형 변수는 Word2Vec으로 임베딩하고, SMOTEENN으로 클래스 불균형을 다룬 뒤 LightGBM에 AdaBoost를 얹었습니다.",
+
     "experience.title": "경력",
     "experience.e1Title": "한국전자통신연구원 (ETRI) · 연구연수생",
     "experience.e1Desc":
@@ -204,16 +214,12 @@ const TRANSLATIONS = {
     "education.d4Title": "대전대신고등학교",
     "education.d4Desc": "대전광역시",
 
-    "awards.title": "수상 및 활동",
+    "awards.title": "수상",
     "awards.a1Title": "우수 논문상 · 한국전자거래학회 추계학술대회",
     "awards.a2Title": "최우수상 · 한국전자거래학회 대학(원)생 아이디어 공모전",
-    "awards.a3Title": "2025 금융 AI Challenge · 283팀 중 15위",
-    "awards.a4Title": "LG Aimers 6기 · 794팀 중 45위 (상위 5%)",
-    "awards.a5Title": "장려상 · 중앙대학교 가상자산 추적대회",
-    "awards.a6Title": "장려상 · DID 비즈니스 모델 특허 공모전",
-    "awards.a7Title": "실습 조교 · 안전한 데이터 활용 전문가 과정",
-    "awards.a8Title": "LG Aimers 4기 · 상위 7%",
-    "awards.a9Title": "대상 · 순천향대학교 SW·AI 페스티벌",
+    "awards.a3Title": "장려상 · 중앙대학교 가상자산 추적대회",
+    "awards.a4Title": "장려상 · DID 비즈니스 모델 특허 공모전",
+    "awards.a5Title": "대상 · 순천향대학교 SW·AI 페스티벌",
 
     "contact.title": "연락처",
     "contact.lead": "공동 연구나 궁금한 점이 있다면 편하게 연락 주세요.",
@@ -407,6 +413,16 @@ const TRANSLATIONS = {
     "projects.j3t1": "Distributed ledger",
     "projects.j3t2": "Identity authentication",
 
+    "projects.j4Title": "Predicting Pregnancy Success for Infertility Patients",
+    "projects.j4Meta": "LG Aimers 6th · 45th of 794 teams (top 5%)",
+    "projects.j4Desc":
+      "Filled missing values from group-level statistics and engineered features such as the embryo preservation rate, then tuned LGBM, XGBoost, and CatBoost with Optuna and averaged their predicted probabilities.",
+
+    "projects.j5Title": "Predicting B2B Sales Opportunities from MQL Data",
+    "projects.j5Meta": "LG Aimers 4th · Top 7%",
+    "projects.j5Desc":
+      "Classified sales conversion from 28 customer features. Categorical variables were embedded with Word2Vec, class imbalance handled with SMOTEENN, and LightGBM served as the base learner under AdaBoost.",
+
     "experience.title": "Experience",
     "experience.e1Title":
       "ETRI (Electronics and Telecommunications Research Institute) · Research Intern",
@@ -439,22 +455,12 @@ const TRANSLATIONS = {
     "education.d4Title": "Daejeon Daeshin High School",
     "education.d4Desc": "Daejeon, South Korea",
 
-    "awards.title": "Awards & Activities",
-    "awards.a1Title":
-      "Best Paper Award · KSEBS Fall Conference",
-    "awards.a2Title":
-      "Grand Prize · KSEBS Student Idea Competition",
-    "awards.a3Title": "2025 Financial AI Challenge · 15th of 283 teams",
-    "awards.a4Title": "LG Aimers 6th · 45th of 794 teams (top 5%)",
-    "awards.a5Title":
-      "Encouragement Award · Chung-Ang University Cryptocurrency Tracing Competition",
-    "awards.a6Title":
-      "Encouragement Award · DID Business Model Patent Competition",
-    "awards.a7Title":
-      "Teaching Assistant · Safe Data Utilization Expert Program",
-    "awards.a8Title": "LG Aimers 4th · Top 7%",
-    "awards.a9Title":
-      "Grand Prize · Soonchunhyang University SW·AI Festival",
+    "awards.title": "Awards",
+    "awards.a1Title": "Best Paper Award · KSEBS Fall Conference",
+    "awards.a2Title": "Grand Prize · KSEBS Student Idea Competition",
+    "awards.a3Title": "Encouragement Award · Chung-Ang University Cryptocurrency Tracing Competition",
+    "awards.a4Title": "Encouragement Award · DID Business Model Patent Competition",
+    "awards.a5Title": "Grand Prize · Soonchunhyang University SW·AI Festival",
 
     "contact.title": "Contact",
     "contact.lead":
