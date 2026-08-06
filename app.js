@@ -91,7 +91,7 @@ const TRANSLATIONS = {
       "교통안전시설물 및 보행자 유무에 따른 차량 속도와의 관계 연구",
     "publications.p7Authors":
       '김성훈, 이병천, <span class="me">김상민</span>, 노병준',
-    "publications.p7Venue": "제4회 한국인공지능학술대회 (한국통신학회)",
+    "publications.p7Venue": "한국통신학회 인공지능 학술대회 논문집",
     "publications.p7Desc":
       "YOLOv7과 DeepSORT로 어린이 보호구역 CCTV 영상을 분석했습니다. 신호등·과속방지턱과 보행자 유무가 차량 속도에 미치는 영향을 지점별로 비교했습니다.",
 
@@ -309,7 +309,7 @@ const TRANSLATIONS = {
     "publications.p7Authors":
       'Kim, S., Lee, B., <span class="me">Kim, S.</span>, &amp; Noh, B.',
     "publications.p7Venue":
-      "The 4th Korea Artificial Intelligence Conference (KICS)",
+      "Proceedings of the KICS Conference on Artificial Intelligence",
     "publications.p7Desc":
       "Analyzes school-zone CCTV footage with YOLOv7 and DeepSORT, comparing how traffic lights, speed bumps, and the presence of pedestrians change vehicle speed at each site.",
 
