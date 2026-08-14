@@ -210,7 +210,7 @@ const TRANSLATIONS = {
     "education.d2Thesis":
       '석사학위논문 — <span class="entry__thesis">선택적 지식 증류를 통한 소프트 결정 트리에서의 머신 언러닝 프레임워크</span>',
     "education.d3Title": "순천향대학교 AI·빅데이터학과 학사",
-    "education.d3Desc": "융합창업학부 SW스타트업 복수전공 · 학점 4.08 / 4.5",
+    "education.d3Desc": "융합창업학부 SW스타트업 복수전공 · 학점 4.08 / 4.5 · 전공 4.2 / 4.5",
     "education.d4Title": "대전대신고등학교",
     "education.d4Desc": "대전광역시",
 
@@ -459,7 +459,7 @@ const TRANSLATIONS = {
     "education.d3Title":
       "B.S. in AI & Big Data, Soonchunhyang University",
     "education.d3Desc":
-      "Double major in SW Startup, School of Convergence Entrepreneurship · GPA 4.08 / 4.5",
+      "Double major in SW Startup, School of Convergence Entrepreneurship · GPA 4.08 / 4.5 · Major GPA 4.2 / 4.5",
     "education.d4Title": "Daejeon Daeshin High School",
     "education.d4Desc": "Daejeon, South Korea",
 
