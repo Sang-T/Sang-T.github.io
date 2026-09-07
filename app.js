@@ -260,7 +260,7 @@ const TRANSLATIONS = {
 
     "intro.photoAlt": "Sangmin Kim",
     "intro.name": "Sangmin Kim",
-    "intro.nameSub": "김상민",
+    "intro.nameSub": "",
     "intro.role": "Ph.D. Student",
     "intro.affil":
       'Dept. of Security Convergence, Chung-Ang University · <a href="https://cau-purelab.github.io/" target="_blank" rel="noopener">PURE Lab</a>',

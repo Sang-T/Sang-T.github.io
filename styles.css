@@ -391,6 +391,11 @@ ol {
   color: var(--text-faint);
 }
 
+/* 영문 버전에는 병기할 이름이 없으므로 빈 줄이 남지 않게 감춥니다. */
+.intro__name-sub:empty {
+  display: none;
+}
+
 .intro__role {
   margin: 1.35rem 0 0;
   font-size: 1.02rem;
