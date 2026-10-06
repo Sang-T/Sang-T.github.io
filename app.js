@@ -105,51 +105,75 @@ const TRANSLATIONS = {
       "AI-Hub 감성대화 말뭉치 40,879건을 분석해, 청소년이 겪는 주요 문제와 감정 분포가 어떻게 이어지는지 살펴봤습니다. 학교·가족 관련 단어가 두드러졌습니다.",
 
     "patents.title": "특허",
-    "patents.note": "등록 2건 · 출원 4건",
+    "patents.note": "등록 2건 · 출원 6건",
 
     "patents.t1Title":
-      "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
+      "출력 기반 디노이징 앵커링 대조 학습을 이용한 확산 모델에서의 강건한 개념 소거 방법 및 그 장치",
     "patents.t1Authors":
-      '노병준, <span class="me">김상민</span>, 이병천, 정운영',
-    "patents.t1Meta": "등록특허 제10-2984271호 · 순천향대학교 산학협력단",
-    "patents.t1Sub":
-      "출원 2024.04.11 (10-2024-0048439) · 공고 2026.06.30 · 청구항 9항",
+      '이미영, 노승민, 박성우, <span class="me">김상민</span>, 이병천',
+    "patents.t1Meta": "출원 10-2026-0176035 · 중앙대학교 산학협력단",
     "patents.t1Desc":
-      "통화 음성을 텍스트로 바꾸는 경로와 속도·음조·음량 등 음성 특징을 뽑는 경로를 병렬로 두고, 두 정보를 함께 써서 위험도를 냅니다. 서버 없이 단말에서 처리합니다.",
+      "사전 학습된 확산 모델에서 안전하지 않은 개념을 제거하되, 보존 대상 프롬프트의 생성 품질은 그대로 유지하도록 편집 대상 U-Net을 학습합니다.",
 
     "patents.t2Title":
-      "딥 러닝 기반 자연어 처리 모델을 활용한, 온라인 그루밍 범죄 탐지 방법 및 그 장치",
+      "표현 소거 및 유용성 복원의 디커플링을 이용한 머신 언러닝 방법 및 그 장치",
     "patents.t2Authors":
-      '<span class="me">김상민</span>, 이병천, 문지훈, 노승민, 무아잠 마쿠수드',
-    "patents.t2Meta": "등록특허 제10-2934580호 · 중앙대학교 산학협력단",
-    "patents.t2Sub":
-      "출원 2024.11.14 (10-2024-0161744) · 공고 2026.03.05 · 청구항 12항",
+      '이미영, 노승민, 박성우, <span class="me">김상민</span>, 이병천, 박형준',
+    "patents.t2Meta": "출원 10-2026-0176036 · 중앙대학교 산학협력단",
     "patents.t2Desc":
-      "SNS 대화 데이터를 전처리해 텍스트 분류 모델을 학습하고, 그 출력으로 온라인 그루밍 범죄를 탐지합니다. CMES 2025 논문의 바탕이 된 발명입니다.",
+      "망각 대상 데이터의 특징 표현을 보존 클래스 프로토타입의 가중 결합 쪽으로 이동시켜, 표현 수준에서 정보를 지우고 유용성 복원은 분리해 수행합니다.",
 
     "patents.t3Title":
-      "판별기 기반 조건부 생성적 적대 신경망에서의 선택적 데이터 망각 방법 및 그 장치",
+      "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
     "patents.t3Authors":
-      '노승민, <span class="me">김상민</span>, 이미영, 이병천',
-    "patents.t3Meta": "출원 10-2025-0133282 · 중앙대학교 산학협력단",
+      '노병준, <span class="me">김상민</span>, 이병천, 정운영',
+    "patents.t3Meta": "등록특허 제10-2984271호 · 순천향대학교 산학협력단",
+    "patents.t3Sub":
+      "출원 2024.04.11 (10-2024-0048439) · 공고 2026.06.30 · 청구항 9항",
+    "patents.t3Desc":
+      "통화 음성을 텍스트로 바꾸는 경로와 음성 특징을 뽑는 경로를 병렬로 두고, 두 정보를 함께 사용해 보이스피싱 위험도를 산출합니다.",
 
     "patents.t4Title":
-      "선택적 지식 증류를 이용한 소프트 의사결정 트리 기반 머신 언러닝 방법",
+      "딥 러닝 기반 자연어 처리 모델을 활용한, 온라인 그루밍 범죄 탐지 방법 및 그 장치",
     "patents.t4Authors":
-      '이미영, 노승민, 이병천, <span class="me">김상민</span>, 박성우',
-    "patents.t4Meta": "출원 10-2025-0109528 · 중앙대학교 산학협력단",
+      '<span class="me">김상민</span>, 이병천, 문지훈, 노승민, 무아잠 마쿠수드',
+    "patents.t4Meta": "등록특허 제10-2934580호 · 중앙대학교 산학협력단",
+    "patents.t4Sub":
+      "출원 2024.11.14 (10-2024-0161744) · 공고 2026.03.05 · 청구항 12항",
+    "patents.t4Desc":
+      "SNS 대화 데이터를 전처리해 텍스트 분류 모델을 학습하고, 그 출력을 기초로 온라인 그루밍 범죄를 탐지합니다.",
 
     "patents.t5Title":
-      "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
+      "판별기 기반 조건부 생성적 적대 신경망에서의 선택적 데이터 망각 방법 및 그 장치",
     "patents.t5Authors":
-      '노병준, <span class="me">김상민</span>, 이병천, 정운영',
-    "patents.t5Meta": "PCT 국제 출원 (PCT/KR2025-004854) · 순천향대학교",
+      '노승민, <span class="me">김상민</span>, 이미영, 이병천',
+    "patents.t5Meta": "출원 10-2025-0133282 · 중앙대학교 산학협력단",
+    "patents.t5Desc":
+      "판별기 학습 과정에서 망각 대상 클래스의 판별 능력을 약화시키고, 그 피드백으로 생성기가 해당 클래스를 만들지 않도록 유도합니다.",
 
     "patents.t6Title":
-      "다변수 산업 사물 단말 관련 시계열 데이터에서 딥 러닝 모델을 기초로 한 이상 탐지 방법 및 그 장치",
+      "선택적 지식 증류를 이용한 소프트 의사결정 트리 기반 머신 언러닝 방법",
     "patents.t6Authors":
+      '이미영, 노승민, 이병천, <span class="me">김상민</span>, 박성우',
+    "patents.t6Meta": "출원 10-2025-0109528 · 중앙대학교 산학협력단",
+    "patents.t6Desc":
+      "지식 증류로 만든 소프트 의사결정 트리에 언러닝을 적용해, 재학습 없이 클래스별 망각을 수행하면서 비대상 클래스의 정확도를 유지합니다.",
+
+    "patents.t7Title":
+      "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
+    "patents.t7Authors":
+      '노병준, <span class="me">김상민</span>, 이병천, 정운영',
+    "patents.t7Meta": "PCT 국제 출원 (PCT/KR2025-004854) · 순천향대학교",
+    "patents.t7Desc":
+      "통화 음성의 텍스트와 음향 특징을 함께 사용해 보이스피싱 위험도를 산출하는 발명의 국제 출원입니다.",
+
+    "patents.t8Title":
+      "다변수 산업 사물 단말 관련 시계열 데이터에서 딥 러닝 모델을 기초로 한 이상 탐지 방법 및 그 장치",
+    "patents.t8Authors":
       '<span class="me">김상민</span>, 이병천, 문지훈, 노승민, 무아잠 마쿠수드',
-    "patents.t6Meta": "출원 10-2024-0161756 · 중앙대학교 산학협력단",
+    "patents.t8Meta": "출원 10-2024-0161756 · 중앙대학교 산학협력단",
+    "patents.t8Desc":
+      "CNN과 양방향 LSTM을 결합한 하이브리드 오토인코더로 산업 사물인터넷 단말의 다변량 시계열에서 이상을 탐지합니다.",
 
     "projects.title": "프로젝트",
     "projects.j1Title":
@@ -341,56 +365,82 @@ const TRANSLATIONS = {
       "Analyzes 40,879 utterances from the AI-Hub emotional dialogue corpus to trace how the problems adolescents face relate to their emotions. School and family words dominated.",
 
     "patents.title": "Patents",
-    "patents.note": "2 granted · 4 filed",
+    "patents.note": "2 granted · 6 filed",
 
     "patents.t1Title":
-      "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
+      "Robust Concept Elimination in a Diffusion Model Using Output-Based Denoising, Anchoring, and Contrastive Learning",
     "patents.t1Authors":
-      'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
+      'Lee, M., Rho, S., Park, S., <span class="me">Kim, S.</span>, &amp; Lee, B.',
     "patents.t1Meta":
-      "Korean Patent No. 10-2984271 · Soonchunhyang University IACF",
-    "patents.t1Sub":
-      "Filed 2024.04.11 (10-2024-0048439) · Published 2026.06.30 · 9 claims",
+      "Application 10-2026-0176035 · Chung-Ang University IACF",
     "patents.t1Desc":
-      "Runs two paths over call audio in parallel — one transcribing speech, the other extracting rate, pitch, and volume — and scores risk from both. Everything happens on the device.",
+      "Trains an editing U-Net to strip unsafe concepts from a pretrained diffusion model while leaving generation quality for the prompts to be preserved untouched.",
 
     "patents.t2Title":
-      "Method and Apparatus for Detecting Online Grooming Crimes Using Deep Learning-Based Natural Language Processing Models",
+      "Machine Unlearning Using Decoupling of Representation Erasure and Utility Restoration",
     "patents.t2Authors":
-      '<span class="me">Kim, S.</span>, Lee, B., Moon, J., Rho, S., &amp; Maqsood, M.',
+      'Lee, M., Rho, S., Park, S., <span class="me">Kim, S.</span>, Lee, B., &amp; Park, H.',
     "patents.t2Meta":
-      "Korean Patent No. 10-2934580 · Chung-Ang University IACF",
-    "patents.t2Sub":
-      "Filed 2024.11.14 (10-2024-0161744) · Published 2026.03.05 · 12 claims",
+      "Application 10-2026-0176036 · Chung-Ang University IACF",
     "patents.t2Desc":
-      "Preprocesses SNS conversation data, trains a text classification model on it, and flags online grooming from the model's output. This is the invention behind the CMES 2025 paper.",
+      "Steers the feature representation of forget-set data toward a weighted blend of retained-class prototypes, erasing information at the representation level and restoring utility as a separate step.",
 
     "patents.t3Title":
-      "Method and Apparatus for Selective Data Forgetting in Discriminator-Based Conditional Generative Adversarial Networks",
+      "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
     "patents.t3Authors":
-      'Rho, S., <span class="me">Kim, S.</span>, Lee, M., &amp; Lee, B.',
+      'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
     "patents.t3Meta":
-      "Application 10-2025-0133282 · Chung-Ang University IACF",
+      "Korean Patent No. 10-2984271 · Soonchunhyang University IACF",
+    "patents.t3Sub":
+      "Filed 2024.04.11 (10-2024-0048439) · Published 2026.06.30 · 9 claims",
+    "patents.t3Desc":
+      "Runs transcription and acoustic feature extraction over call audio in parallel, then scores voice phishing risk from both signals together.",
 
     "patents.t4Title":
-      "Machine Unlearning Method Based on a Soft Decision Tree Using Selective Knowledge Distillation",
+      "Method and Apparatus for Detecting Online Grooming Crimes Using Deep Learning-Based Natural Language Processing Models",
     "patents.t4Authors":
-      'Lee, M., Rho, S., Lee, B., <span class="me">Kim, S.</span>, &amp; Park, S.',
+      '<span class="me">Kim, S.</span>, Lee, B., Moon, J., Rho, S., &amp; Maqsood, M.',
     "patents.t4Meta":
-      "Application 10-2025-0109528 · Chung-Ang University IACF",
+      "Korean Patent No. 10-2934580 · Chung-Ang University IACF",
+    "patents.t4Sub":
+      "Filed 2024.11.14 (10-2024-0161744) · Published 2026.03.05 · 12 claims",
+    "patents.t4Desc":
+      "Preprocesses SNS conversation data, trains a text classification model on it, and flags online grooming from the model output.",
 
     "patents.t5Title":
-      "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
+      "Method and Apparatus for Selective Data Forgetting in Discriminator-Based Conditional Generative Adversarial Networks",
     "patents.t5Authors":
-      'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
+      'Rho, S., <span class="me">Kim, S.</span>, Lee, M., &amp; Lee, B.',
     "patents.t5Meta":
-      "PCT international application (PCT/KR2025-004854) · Soonchunhyang University",
+      "Application 10-2025-0133282 · Chung-Ang University IACF",
+    "patents.t5Desc":
+      "Weakens the discriminator's ability to recognize the target class during training, then uses that feedback to stop the generator from producing it.",
 
     "patents.t6Title":
-      "Method and Apparatus for Anomaly Detection Based on Deep Learning Models in Time Series Data Related to Multivariate Industrial Things Terminals",
+      "Machine Unlearning Method Based on a Soft Decision Tree Using Selective Knowledge Distillation",
     "patents.t6Authors":
+      'Lee, M., Rho, S., Lee, B., <span class="me">Kim, S.</span>, &amp; Park, S.',
+    "patents.t6Meta":
+      "Application 10-2025-0109528 · Chung-Ang University IACF",
+    "patents.t6Desc":
+      "Applies unlearning to a soft decision tree built by knowledge distillation, forgetting a class without retraining while keeping accuracy on the remaining classes.",
+
+    "patents.t7Title":
+      "Apparatus and Method for Real-Time Recognition of Voice Phishing Context During a Call",
+    "patents.t7Authors":
+      'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
+    "patents.t7Meta":
+      "PCT international application (PCT/KR2025-004854) · Soonchunhyang University",
+    "patents.t7Desc":
+      "The international filing of the invention that scores voice phishing risk from both the transcript and the acoustic features of a call.",
+
+    "patents.t8Title":
+      "Method and Apparatus for Anomaly Detection Based on Deep Learning Models in Time Series Data Related to Multivariate Industrial Things Terminals",
+    "patents.t8Authors":
       '<span class="me">Kim, S.</span>, Lee, B., Moon, J., Rho, S., &amp; Maqsood, M.',
-    "patents.t6Meta": "Application 10-2024-0161756 · Chung-Ang University IACF",
+    "patents.t8Meta": "Application 10-2024-0161756 · Chung-Ang University IACF",
+    "patents.t8Desc":
+      "Detects anomalies in multivariate time series from industrial IoT terminals using a hybrid autoencoder that combines a CNN with a bidirectional LSTM.",
 
     "projects.title": "Projects",
     "projects.j1Title":
