@@ -249,15 +249,19 @@ const TRANSLATIONS = {
 
     "awards.title": "수상",
     "awards.a1Title": "우수논문상 (정보보호학회장상) · 한국정보보호학회 동계학술대회",
-    "awards.a1Paper":
+    "awards.a1Sub":
       "논문: 머신 언러닝 모델의 탐지 가능성 완화를 위한 내부 표현 정렬 프레임워크",
     "awards.a2Title": "우수 논문상 · 한국전자거래학회 추계학술대회",
-    "awards.a2Paper":
+    "awards.a2Sub":
       "논문: 패턴 보존 기반 생성 모델의 클래스 선택적 언러닝 프레임워크",
     "awards.a3Title": "최우수상 · 한국전자거래학회 대학(원)생 아이디어 공모전",
+    "awards.a3Sub":
+      "주제: 온라인 머신 언러닝 기반 네트워크 침입 탐지 시스템 (OMU-NIDS)",
     "awards.a4Title": "장려상 · 중앙대학교 가상자산 추적대회",
     "awards.a5Title": "장려상 · DID 비즈니스 모델 특허 공모전",
+    "awards.a5Sub": "주제: 캠퍼스 로그인 혁신 — DID 기반 신원 인증 시스템",
     "awards.a6Title": "대상 · 순천향대학교 SW·AI 페스티벌",
+    "awards.a6Sub": "주제: 딥러닝과 OCR을 이용한 SNS상 온라인 그루밍 탐지",
 
     "contact.title": "연락처",
     "contact.lead": "궁금한 점이 있다면 편하게 연락 주세요.",
@@ -531,18 +535,24 @@ const TRANSLATIONS = {
     "awards.title": "Awards",
     "awards.a1Title":
       "Best Paper Award (KIISC President's Award) · KIISC Winter Conference (CISC-W'26)",
-    "awards.a1Paper":
+    "awards.a1Sub":
       "Paper: An Internal Representation Alignment Framework for Mitigating the Detectability of Machine Unlearning Models",
     "awards.a2Title": "Best Paper Award · KSEBS Fall Conference",
-    "awards.a2Paper":
+    "awards.a2Sub":
       "Paper: A Class-Selective Unlearning Framework for Pattern-Preserving Generative Models",
     "awards.a3Title": "Grand Prize · KSEBS Student Idea Competition",
+    "awards.a3Sub":
+      "Topic: OMU-NIDS — Online Machine Unlearning-Based Network Intrusion Detection System",
     "awards.a4Title":
       "Encouragement Award · Chung-Ang University Cryptocurrency Tracing Competition",
     "awards.a5Title":
       "Encouragement Award · DID Business Model Patent Competition",
+    "awards.a5Sub":
+      "Topic: Campus Login Reimagined — DID-Based Identity Authentication",
     "awards.a6Title":
       "Grand Prize · Soonchunhyang University SW·AI Festival",
+    "awards.a6Sub":
+      "Topic: Detecting Online Grooming on Social Networks with Deep Learning and OCR",
 
     "contact.title": "Contact",
     "contact.lead": "Feel free to reach out if you have any questions.",
