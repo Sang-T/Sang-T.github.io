@@ -230,7 +230,7 @@ const TRANSLATIONS = {
     "education.oxCredits":
       "9학점 · Secure System Design & Engineering, People & Security, Communication Security",
     "education.oxDesc":
-      "한국 대학 리더십 이니셔티브의 일환으로 옥스퍼드대학교 켈로그칼리지가 운영하는 6개월 맞춤형 사이버보안 과정에 25명 중 한 명으로 선발됐습니다. 정보통신기획평가원(IITP)의 지원을 받으며, 강의와 팀 기반 연구를 결합해 AI 시대의 보안 과제에 대응할 수 있는 폭넓은 보안 전문성과 연구 역량을 기릅니다.",
+      "Selected as one of 25 participants in a bespoke six-month cybersecurity course delivered by Kellogg College, University of Oxford, as part of a Korea University leadership initiative, funded by the Institute of Information and Communications Technology Planning & Evaluation (IITP) in South Korea. Combining lectures with team-based research, the course builds well-rounded security expertise and research skills for AI-era challenges.",
     "education.d1Year": "2026.03<br />– 현재",
     "education.d1Title": "중앙대학교 융합보안학과 박사과정",
     "education.d1Desc":
