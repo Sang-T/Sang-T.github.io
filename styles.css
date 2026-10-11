@@ -719,6 +719,13 @@ ol {
   margin-top: 0.45rem;
 }
 
+/* 영문 장문 문단 — 오른쪽 끝을 맞춰 줄이 중간에 끊긴 것처럼 보이지 않게 합니다.
+   한국어 문단에는 쓰지 마세요. word-break: keep-all 과 겹치면 단어 사이가 크게 벌어집니다. */
+.entry__desc--justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* 학위논문 제목 */
 .entry__thesis {
   color: var(--text);
