@@ -709,6 +709,12 @@ ol {
   margin-top: 0.2rem;
 }
 
+/* 메타 줄 안에서 강조할 부분 (예: 국제 출원) */
+.entry__meta strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .entry__venue {
   font-style: italic;
 }
@@ -802,7 +808,8 @@ ol {
   white-space: nowrap;
 }
 
-.badge--first {
+.badge--first,
+.badge--accent {
   color: var(--accent);
   border-color: color-mix(in srgb, var(--accent) 40%, transparent);
   background: var(--accent-soft);

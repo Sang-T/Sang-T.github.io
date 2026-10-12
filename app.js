@@ -52,6 +52,7 @@ const TRANSLATIONS = {
     "badge.workshop": "워크숍",
     "badge.granted": "등록",
     "badge.filed": "출원",
+    "badge.pct": "국제 출원",
     "badge.grandPrize": "최우수상",
     "badge.encouragement": "장려상",
 
@@ -163,7 +164,7 @@ const TRANSLATIONS = {
       "통화 중 실시간으로 보이스피싱의 맥락을 인식하는 장치 및 동작 방법",
     "patents.t7Authors":
       '노병준, <span class="me">김상민</span>, 이병천, 정운영',
-    "patents.t7Meta": "PCT 국제 출원 (PCT/KR2025-004854) · 순천향대학교",
+    "patents.t7Meta": "<strong>PCT 국제 출원</strong> (PCT/KR2025-004854) · 순천향대학교",
     "patents.t7Desc":
       "통화 음성의 텍스트와 음향 특징을 함께 사용해 보이스피싱 위험도를 산출하는 발명의 국제 출원입니다.",
 
@@ -323,6 +324,7 @@ const TRANSLATIONS = {
     "badge.workshop": "Workshop",
     "badge.granted": "Granted",
     "badge.filed": "Filed",
+    "badge.pct": "International",
     "badge.grandPrize": "Grand Prize",
     "badge.encouragement": "Encouragement Award",
 
@@ -446,7 +448,7 @@ const TRANSLATIONS = {
     "patents.t7Authors":
       'Noh, B., <span class="me">Kim, S.</span>, Lee, B., &amp; Jeong, W.',
     "patents.t7Meta":
-      "PCT international application (PCT/KR2025-004854) · Soonchunhyang University",
+      "<strong>PCT international application</strong> (PCT/KR2025-004854) · Soonchunhyang University",
     "patents.t7Desc":
       "The international filing of the invention that scores voice phishing risk from both the transcript and the acoustic features of a call.",
 
